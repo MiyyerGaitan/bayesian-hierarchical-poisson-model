@@ -12,7 +12,7 @@
 .filter-stats{width:100%;font-size:13px;color:var(--muted);margin-top:4px;display:flex;justify-content:space-between;align-items:center}
 .match-date-badge{font-size:13px;font-weight:normal;background:#e0e7ff;color:#1e40af;padding:3px 8px;border-radius:12px;margin-left:10px;vertical-align:middle;display:inline-block}
 .page-view{display:none}.page-view.active{display:block}.ratings-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:28px;margin:20px 0 40px}.ratings-heading{margin-top:24px}.rating-card{background:white;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 10px 25px -5px rgba(0,0,0,.08);display:flex;flex-direction:column}.card-header{padding:16px 20px;background:var(--soft);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}.card-title{font-size:18px;font-weight:bold;color:var(--ink);margin:0}.badge{font-size:12px;font-weight:600;padding:4px 10px;border-radius:12px;background:#e0e7ff;color:#1e40af}.img-wrapper{background:#fafafa;padding:16px;text-align:center}.img-wrapper img{max-width:100%;height:auto;display:block;margin:0 auto}.card-footer{padding:14px 20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;align-items:center}.card-caption{margin:0;color:var(--muted);font-size:13px}.nav-tabs{display:flex;gap:8px;border-bottom:2px solid var(--line);margin:24px 0 20px}.nav-tab{padding:10px 16px;border:0;border-bottom:3px solid transparent;background:transparent;color:var(--muted);font-weight:600;cursor:pointer;font-size:14px}.nav-tab:hover,.nav-tab.active{color:var(--brand);background:var(--soft);border-bottom-color:var(--brand)}@media(max-width:800px){.ratings-gallery{grid-template-columns:1fr}}
-</style></head><body><main><header><h1>Informe ejecutivo de predicciones deportivas</h1><p class="meta">Generado: <strong>2026-09-26T16:43:06.099241</strong> · Partidos analizados: <strong>28</strong> · Modelo: <strong>Bayesian hierarchical Poisson</strong></p></header>
+</style></head><body><main><header><h1>Informe ejecutivo de predicciones deportivas</h1><p class="meta">Generado: <strong>2026-09-28T23:24:37.102503</strong> · Partidos analizados: <strong>6</strong> · Modelo: <strong>Bayesian hierarchical Poisson</strong></p></header>
 <p class="disclaimer">Las probabilidades son salidas de un modelo estadístico y las cuotas son teóricas. Este informe sirve como apoyo analítico para la toma de decisiones; no garantiza resultados ni sustituye controles de riesgo.</p>
 
 <nav class="nav-tabs"><button type="button" class="nav-tab active" id="tab-btn-matches" onclick="switchTab('matches')">📊 Partidos y Predicciones</button><button type="button" class="nav-tab" id="tab-btn-ratings" onclick="switchTab('ratings')">📈 Ratings de Equipos</button></nav>
@@ -32,485 +32,111 @@
     <button type="button" id="btn-reset" class="btn-reset">Limpiar filtros</button>
   </div>
   <div class="filter-stats">
-    <span>Mostrando <strong id="visible-count">28</strong> de <span id="total-count">28</span> partidos</span>
+    <span>Mostrando <strong id="visible-count">6</strong> de <span id="total-count">6</span> partidos</span>
   </div>
 </section>
 
-<section class="summary"><h2>Resumen para decisión</h2><p class="meta">RPS temporal fuera de muestra: <strong>0.1937</strong> · Pliegues evaluados: <strong>3</strong></p><table><thead><tr><th>Partido</th><th>Favorito</th><th>Prob.</th><th>xG total</th><th>Marcador modal</th><th>Señal</th></tr></thead><tbody><tr data-match="Belgium vs France" data-date="2026-09-28"><td><strong>Belgium</strong> vs <strong>France</strong> <br><small class="meta">📅 2026-09-28 · 13:45:00</small></td><td>France</td><td>39.9%</td><td>2.83</td><td>1-1 (11.8%)</td><td>Partido abierto: France (39.9%)</td></tr>
-<tr data-match="Türkiye vs Italy" data-date="2026-09-28"><td><strong>Türkiye</strong> vs <strong>Italy</strong> <br><small class="meta">📅 2026-09-28 · 13:45:00</small></td><td>Türkiye</td><td>44.0%</td><td>2.59</td><td>1-1 (12.4%)</td><td>Partido abierto: Türkiye (44.0%)</td></tr>
-<tr data-match="Serbia vs Netherlands" data-date="2026-09-27"><td><strong>Serbia</strong> vs <strong>Netherlands</strong> <br><small class="meta">📅 2026-09-27 · 11:00:00</small></td><td>Netherlands</td><td>47.1%</td><td>2.34</td><td>0-1 (13.4%)</td><td>Ventaja moderada: Netherlands (47.1%)</td></tr>
-<tr data-match="Germany vs Greece" data-date="2026-09-27"><td><strong>Germany</strong> vs <strong>Greece</strong> <br><small class="meta">📅 2026-09-27 · 13:45:00</small></td><td>Germany</td><td>62.1%</td><td>2.90</td><td>1-0 (10.9%)</td><td>Ventaja clara: Germany (62.1%)</td></tr>
-<tr data-match="Denmark vs Wales" data-date="2026-09-27"><td><strong>Denmark</strong> vs <strong>Wales</strong> <br><small class="meta">📅 2026-09-27 · 11:00:00</small></td><td>Denmark</td><td>64.2%</td><td>2.48</td><td>1-0 (15.0%)</td><td>Ventaja clara: Denmark (64.2%)</td></tr>
-<tr data-match="Norway vs Portugal" data-date="2026-09-27"><td><strong>Norway</strong> vs <strong>Portugal</strong> <br><small class="meta">📅 2026-09-27 · 13:45:00</small></td><td>Norway</td><td>46.2%</td><td>3.55</td><td>1-1 (9.0%)</td><td>Ventaja moderada: Norway (46.2%)</td></tr>
-<tr data-match="Georgia vs Ukraine" data-date="2026-09-28"><td><strong>Georgia</strong> vs <strong>Ukraine</strong> <br><small class="meta">📅 2026-09-28 · 11:00:00</small></td><td>Georgia</td><td>48.1%</td><td>2.57</td><td>1-1 (12.2%)</td><td>Ventaja moderada: Georgia (48.1%)</td></tr>
-<tr data-match="Northern Ireland vs Hungary" data-date="2026-09-28"><td><strong>Northern Ireland</strong> vs <strong>Hungary</strong> <br><small class="meta">📅 2026-09-28 · 13:45:00</small></td><td>Northern Ireland</td><td>47.4%</td><td>2.14</td><td>1-0 (15.3%)</td><td>Ventaja moderada: Northern Ireland (47.4%)</td></tr>
-<tr data-match="Austria vs Kosovo" data-date="2026-09-27"><td><strong>Austria</strong> vs <strong>Kosovo</strong> <br><small class="meta">📅 2026-09-27 · 11:00:00</small></td><td>Austria</td><td>56.7%</td><td>2.58</td><td>1-0 (12.9%)</td><td>Ventaja moderada: Austria (56.7%)</td></tr>
-<tr data-match="Israel vs Ireland" data-date="2026-09-27"><td><strong>Israel</strong> vs <strong>Ireland</strong> <br><small class="meta">📅 2026-09-27 · 13:45:00</small></td><td>Israel</td><td>41.4%</td><td>2.46</td><td>1-1 (12.8%)</td><td>Partido abierto: Israel (41.4%)</td></tr>
-<tr data-match="Romania vs Bosnia &amp; Herzegovina" data-date="2026-09-28"><td><strong>Romania</strong> vs <strong>Bosnia &amp; Herzegovina</strong> <br><small class="meta">📅 2026-09-28 · 13:45:00</small></td><td>Romania</td><td>58.2%</td><td>2.54</td><td>1-0 (13.5%)</td><td>Ventaja moderada: Romania (58.2%)</td></tr>
-<tr data-match="Sweden vs Poland" data-date="2026-09-28"><td><strong>Sweden</strong> vs <strong>Poland</strong> <br><small class="meta">📅 2026-09-28 · 13:45:00</small></td><td>Sweden</td><td>57.3%</td><td>3.54</td><td>2-1 (9.4%)</td><td>Ventaja moderada: Sweden (57.3%)</td></tr>
-<tr data-match="Armenia vs Montenegro" data-date="2026-09-28"><td><strong>Armenia</strong> vs <strong>Montenegro</strong> <br><small class="meta">📅 2026-09-28 · 11:00:00</small></td><td>Montenegro</td><td>40.3%</td><td>3.10</td><td>1-1 (10.8%)</td><td>Partido abierto: Montenegro (40.3%)</td></tr>
-<tr data-match="Latvia vs Cyprus" data-date="2026-09-28"><td><strong>Latvia</strong> vs <strong>Cyprus</strong> <br><small class="meta">📅 2026-09-28 · 11:00:00</small></td><td>Latvia</td><td>37.0%</td><td>2.11</td><td>1-1 (13.5%)</td><td>Partido abierto: Latvia (37.0%)</td></tr>
-<tr data-match="Gibraltar vs Andorra" data-date="2026-09-27"><td><strong>Gibraltar</strong> vs <strong>Andorra</strong> <br><small class="meta">📅 2026-09-27 · 11:00:00</small></td><td>Gibraltar</td><td>38.1%</td><td>1.64</td><td>0-0 (19.3%)</td><td>Partido abierto: Gibraltar (38.1%)</td></tr>
-<tr data-match="Pumas UNAM vs Atlético San Luis" data-date="2026-09-27"><td><strong>Pumas UNAM</strong> vs <strong>Atlético San Luis</strong> <br><small class="meta">📅 2026-09-27 · 13:00:00</small></td><td>Pumas UNAM</td><td>72.1%</td><td>3.54</td><td>2-0 (9.6%)</td><td>Ventaja clara: Pumas UNAM (72.1%)</td></tr>
-<tr data-match="Club León vs FC Juárez" data-date="2026-09-27"><td><strong>Club León</strong> vs <strong>FC Juárez</strong> <br><small class="meta">📅 2026-09-27 · 20:00:00</small></td><td>Club León</td><td>65.5%</td><td>3.48</td><td>2-1 (9.6%)</td><td>Ventaja clara: Club León (65.5%)</td></tr>
-<tr data-match="Club Necaxa vs Club América" data-date="2026-09-27"><td><strong>Club Necaxa</strong> vs <strong>Club América</strong> <br><small class="meta">📅 2026-09-27 · 22:10:00</small></td><td>Club América</td><td>39.2%</td><td>2.58</td><td>1-1 (12.6%)</td><td>Partido abierto: Club América (39.2%)</td></tr>
-<tr data-match="Columbus Crew vs Inter Miami CF" data-date="2026-09-27"><td><strong>Columbus Crew</strong> vs <strong>Inter Miami CF</strong> <br><small class="meta">📅 2026-09-27 · 18:00:00</small></td><td>Columbus Crew</td><td>48.1%</td><td>4.05</td><td>2-1 (7.9%)</td><td>Ventaja moderada: Columbus Crew (48.1%)</td></tr>
-<tr data-match="Real Valladolid vs Córdoba" data-date="2026-09-27"><td><strong>Real Valladolid</strong> vs <strong>Córdoba</strong> <br><small class="meta">📅 2026-09-27 · 07:00:00</small></td><td>Córdoba</td><td>42.2%</td><td>2.86</td><td>1-1 (11.6%)</td><td>Partido abierto: Córdoba (42.2%)</td></tr>
-<tr data-match="Mallorca vs Almería" data-date="2026-09-27"><td><strong>Mallorca</strong> vs <strong>Almería</strong> <br><small class="meta">📅 2026-09-27 · 09:15:00</small></td><td>Mallorca</td><td>42.3%</td><td>2.61</td><td>1-1 (12.4%)</td><td>Partido abierto: Mallorca (42.3%)</td></tr>
-<tr data-match="Burgos Club de Fútbol vs CD Eldense" data-date="2026-09-27"><td><strong>Burgos Club de Fútbol</strong> vs <strong>CD Eldense</strong> <br><small class="meta">📅 2026-09-27 · 11:30:00</small></td><td>Burgos Club de Fútbol</td><td>44.6%</td><td>1.83</td><td>1-0 (17.8%)</td><td>Partido abierto: Burgos Club de Fútbol (44.6%)</td></tr>
-<tr data-match="Eibar vs UD Las Palmas" data-date="2026-09-27"><td><strong>Eibar</strong> vs <strong>UD Las Palmas</strong> <br><small class="meta">📅 2026-09-27 · 11:30:00</small></td><td>Eibar</td><td>58.7%</td><td>2.08</td><td>1-0 (18.4%)</td><td>Ventaja moderada: Eibar (58.7%)</td></tr>
-<tr data-match="Real Oviedo vs Sporting Gijón" data-date="2026-09-27"><td><strong>Real Oviedo</strong> vs <strong>Sporting Gijón</strong> <br><small class="meta">📅 2026-09-27 · 14:00:00</small></td><td>Sporting Gijón</td><td>41.2%</td><td>2.06</td><td>0-1 (14.7%)</td><td>Partido abierto: Sporting Gijón (41.2%)</td></tr>
-<tr data-match="Leganés vs CD Castellón" data-date="2026-09-28"><td><strong>Leganés</strong> vs <strong>CD Castellón</strong> <br><small class="meta">📅 2026-09-28 · 13:30:00</small></td><td>CD Castellón</td><td>41.9%</td><td>2.32</td><td>1-1 (13.1%)</td><td>Partido abierto: CD Castellón (41.9%)</td></tr>
-<tr data-match="Criciúma vs Avaí" data-date="2026-09-27"><td><strong>Criciúma</strong> vs <strong>Avaí</strong> <br><small class="meta">📅 2026-09-27 · 09:00:00</small></td><td>Criciúma</td><td>46.4%</td><td>2.05</td><td>1-0 (15.9%)</td><td>Ventaja moderada: Criciúma (46.4%)</td></tr>
-<tr data-match="Fortaleza vs Athletic Club" data-date="2026-09-27"><td><strong>Fortaleza</strong> vs <strong>Athletic Club</strong> <br><small class="meta">📅 2026-09-27 · 16:30:00</small></td><td>Fortaleza</td><td>43.5%</td><td>2.01</td><td>1-0 (15.7%)</td><td>Partido abierto: Fortaleza (43.5%)</td></tr>
-<tr data-match="América Mineiro vs Juventude" data-date="2026-09-28"><td><strong>América Mineiro</strong> vs <strong>Juventude</strong> <br><small class="meta">📅 2026-09-28 · 17:30:00</small></td><td>Juventude</td><td>46.0%</td><td>1.95</td><td>0-1 (16.9%)</td><td>Ventaja moderada: Juventude (46.0%)</td></tr></tbody></table></section>
-    <section class="match" data-match="Belgium vs France" data-date="2026-09-28">
-      <h2>Belgium <span>vs</span> France <span class="match-date-badge">📅 2026-09-28 · 13:45:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>1.36</strong></div>
-      <div><small>xG visitante</small><strong>1.47</strong></div>
-      <div><small>xG total</small><strong>2.83</strong></div>
-      <div><small>Señal</small><strong>Partido abierto: France (39.9%)</strong></div></div>
+<section class="summary"><h2>Resumen para decisión</h2><p class="meta">RPS temporal fuera de muestra: <strong>0.1896</strong> · Pliegues evaluados: <strong>3</strong></p><table><thead><tr><th>Partido</th><th>Favorito</th><th>Prob.</th><th>xG total</th><th>Marcador modal</th><th>Señal</th></tr></thead><tbody><tr data-match="Czechia vs England" data-date="2026-09-29"><td><strong>Czechia</strong> vs <strong>England</strong> <br><small class="meta">📅 2026-09-29 · 13:45:00</small></td><td>England</td><td>58.2%</td><td>3.26</td><td>1-2 (9.8%)</td><td>Ventaja moderada: England (58.2%)</td></tr>
+<tr data-match="Spain vs Croatia" data-date="2026-09-29"><td><strong>Spain</strong> vs <strong>Croatia</strong> <br><small class="meta">📅 2026-09-29 · 13:45:00</small></td><td>Spain</td><td>69.6%</td><td>3.42</td><td>2-0 (9.7%)</td><td>Ventaja clara: Spain (69.6%)</td></tr>
+<tr data-match="Scotland vs Switzerland" data-date="2026-09-29"><td><strong>Scotland</strong> vs <strong>Switzerland</strong> <br><small class="meta">📅 2026-09-29 · 13:45:00</small></td><td>Switzerland</td><td>46.1%</td><td>2.64</td><td>1-1 (12.2%)</td><td>Ventaja moderada: Switzerland (46.1%)</td></tr>
+<tr data-match="Slovenia vs North Macedonia" data-date="2026-09-29"><td><strong>Slovenia</strong> vs <strong>North Macedonia</strong> <br><small class="meta">📅 2026-09-29 · 13:45:00</small></td><td>Slovenia</td><td>44.5%</td><td>1.78</td><td>1-0 (18.3%)</td><td>Partido abierto: Slovenia (44.5%)</td></tr>
+<tr data-match="New York Red Bulls vs St.Louis City" data-date="2026-09-30"><td><strong>New York Red Bulls</strong> vs <strong>St.Louis City</strong> <br><small class="meta">📅 2026-09-30 · 18:30:00</small></td><td>St.Louis City</td><td>52.4%</td><td>3.76</td><td>1-2 (8.8%)</td><td>Ventaja moderada: St.Louis City (52.4%)</td></tr>
+<tr data-match="Botafogo-SP vs Ponte Preta" data-date="2026-09-29"><td><strong>Botafogo-SP</strong> vs <strong>Ponte Preta</strong> <br><small class="meta">📅 2026-09-29 · 17:30:00</small></td><td>Botafogo-SP</td><td>65.2%</td><td>2.22</td><td>1-0 (18.2%)</td><td>Ventaja clara: Botafogo-SP (65.2%)</td></tr></tbody></table></section>
+    <section class="match" data-match="Czechia vs England" data-date="2026-09-29">
+      <h2>Czechia <span>vs</span> England <span class="match-date-badge">📅 2026-09-29 · 13:45:00</span></h2>
+      <div class="metrics"><div><small>xG local</small><strong>1.18</strong></div>
+      <div><small>xG visitante</small><strong>2.09</strong></div>
+      <div><small>xG total</small><strong>3.26</strong></div>
+      <div><small>Señal</small><strong>Ventaja moderada: England (58.2%)</strong></div></div>
       <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>35.0%</td><td>2.86</td></tr><tr><td>Empate</td><td>25.1%</td><td>3.98</td></tr><tr><td>Visitante</td><td>39.9%</td><td>2.51</td></tr><tr><td>1X</td><td>60.1%</td><td>1.66</td></tr><tr><td>X2</td><td>65.0%</td><td>1.54</td></tr><tr><td>12</td><td>74.9%</td><td>1.34</td></tr></tbody></table>
+        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>20.9%</td><td>4.77</td></tr><tr><td>Empate</td><td>20.8%</td><td>4.80</td></tr><tr><td>Visitante</td><td>58.2%</td><td>1.72</td></tr><tr><td>1X</td><td>41.8%</td><td>2.39</td></tr><tr><td>X2</td><td>79.1%</td><td>1.26</td></tr><tr><td>12</td><td>79.2%</td><td>1.26</td></tr></tbody></table>
       </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>94.1%</td><td>1.06</td><td>5.9%</td><td>16.91</td></tr><tr><td>1.5</td><td>77.4%</td><td>1.29</td><td>22.6%</td><td>4.42</td></tr><tr><td>2.5</td><td>53.7%</td><td>1.86</td><td>46.3%</td><td>2.16</td></tr><tr><td>3.5</td><td>31.4%</td><td>3.18</td><td>68.6%</td><td>1.46</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 55.0% &nbsp; <strong>BTTS no:</strong> 45.0%</p>
+        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>96.2%</td><td>1.04</td><td>3.8%</td><td>26.18</td></tr><tr><td>1.5</td><td>83.7%</td><td>1.19</td><td>16.3%</td><td>6.14</td></tr><tr><td>2.5</td><td>63.3%</td><td>1.58</td><td>36.7%</td><td>2.73</td></tr><tr><td>3.5</td><td>41.2%</td><td>2.43</td><td>58.8%</td><td>1.70</td></tr></tbody></table>
+        <p><strong>BTTS sí:</strong> 55.8% &nbsp; <strong>BTTS no:</strong> 44.2%</p>
       </div></div>
       <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-1</td><td>11.8%</td><td>8.47</td></tr><tr><td>0-1</td><td>8.7%</td><td>11.52</td></tr><tr><td>1-2</td><td>8.7%</td><td>11.54</td></tr><tr><td>1-0</td><td>8.0%</td><td>12.44</td></tr><tr><td>2-1</td><td>8.0%</td><td>12.46</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>5.9%</td><td>8.7%</td><td>6.4%</td><td>3.1%</td><td>1.1%</td></tr><tr><th>1 G</th><td>8.0%</td><td>11.8%</td><td>8.7%</td><td>4.2%</td><td>1.6%</td></tr><tr><th>2 G</th><td>5.5%</td><td>8.0%</td><td>5.9%</td><td>2.9%</td><td>1.1%</td></tr><tr><th>3 G</th><td>2.5%</td><td>3.6%</td><td>2.7%</td><td>1.3%</td><td>0.5%</td></tr><tr><th>4 G</th><td>0.8%</td><td>1.2%</td><td>0.9%</td><td>0.4%</td><td>0.2%</td></tr></tbody></table></div></div>
+        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-2</td><td>9.8%</td><td>10.21</td></tr><tr><td>1-1</td><td>9.4%</td><td>10.65</td></tr><tr><td>0-2</td><td>8.3%</td><td>12.03</td></tr><tr><td>0-1</td><td>8.0%</td><td>12.55</td></tr><tr><td>1-3</td><td>6.8%</td><td>14.68</td></tr></tbody></table>
+      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>3.8%</td><td>8.0%</td><td>8.3%</td><td>5.8%</td><td>3.0%</td></tr><tr><th>1 G</th><td>4.5%</td><td>9.4%</td><td>9.8%</td><td>6.8%</td><td>3.6%</td></tr><tr><th>2 G</th><td>2.7%</td><td>5.5%</td><td>5.8%</td><td>4.0%</td><td>2.1%</td></tr><tr><th>3 G</th><td>1.0%</td><td>2.2%</td><td>2.3%</td><td>1.6%</td><td>0.8%</td></tr><tr><th>4 G</th><td>0.3%</td><td>0.6%</td><td>0.7%</td><td>0.5%</td><td>0.2%</td></tr></tbody></table></div></div>
     </section>
-    <section class="match" data-match="Türkiye vs Italy" data-date="2026-09-28">
-      <h2>Türkiye <span>vs</span> Italy <span class="match-date-badge">📅 2026-09-28 · 13:45:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>1.45</strong></div>
-      <div><small>xG visitante</small><strong>1.14</strong></div>
-      <div><small>xG total</small><strong>2.59</strong></div>
-      <div><small>Señal</small><strong>Partido abierto: Türkiye (44.0%)</strong></div></div>
+    <section class="match" data-match="Spain vs Croatia" data-date="2026-09-29">
+      <h2>Spain <span>vs</span> Croatia <span class="match-date-badge">📅 2026-09-29 · 13:45:00</span></h2>
+      <div class="metrics"><div><small>xG local</small><strong>2.45</strong></div>
+      <div><small>xG visitante</small><strong>0.98</strong></div>
+      <div><small>xG total</small><strong>3.42</strong></div>
+      <div><small>Señal</small><strong>Ventaja clara: Spain (69.6%)</strong></div></div>
       <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>44.0%</td><td>2.27</td></tr><tr><td>Empate</td><td>26.1%</td><td>3.83</td></tr><tr><td>Visitante</td><td>29.9%</td><td>3.35</td></tr><tr><td>1X</td><td>70.1%</td><td>1.43</td></tr><tr><td>X2</td><td>56.0%</td><td>1.79</td></tr><tr><td>12</td><td>73.9%</td><td>1.35</td></tr></tbody></table>
+        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>69.6%</td><td>1.44</td></tr><tr><td>Empate</td><td>17.2%</td><td>5.83</td></tr><tr><td>Visitante</td><td>13.2%</td><td>7.55</td></tr><tr><td>1X</td><td>86.8%</td><td>1.15</td></tr><tr><td>X2</td><td>30.4%</td><td>3.29</td></tr><tr><td>12</td><td>82.8%</td><td>1.21</td></tr></tbody></table>
       </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>92.5%</td><td>1.08</td><td>7.5%</td><td>13.30</td></tr><tr><td>1.5</td><td>73.0%</td><td>1.37</td><td>27.0%</td><td>3.71</td></tr><tr><td>2.5</td><td>47.9%</td><td>2.09</td><td>52.1%</td><td>1.92</td></tr><tr><td>3.5</td><td>26.1%</td><td>3.83</td><td>73.9%</td><td>1.35</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 50.5% &nbsp; <strong>BTTS no:</strong> 49.5%</p>
+        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>96.7%</td><td>1.03</td><td>3.3%</td><td>30.67</td></tr><tr><td>1.5</td><td>85.6%</td><td>1.17</td><td>14.4%</td><td>6.93</td></tr><tr><td>2.5</td><td>66.5%</td><td>1.50</td><td>33.5%</td><td>2.98</td></tr><tr><td>3.5</td><td>44.7%</td><td>2.24</td><td>55.3%</td><td>1.81</td></tr></tbody></table>
+        <p><strong>BTTS sí:</strong> 50.4% &nbsp; <strong>BTTS no:</strong> 49.6%</p>
       </div></div>
       <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-1</td><td>12.4%</td><td>8.06</td></tr><tr><td>1-0</td><td>10.9%</td><td>9.21</td></tr><tr><td>2-1</td><td>9.0%</td><td>11.15</td></tr><tr><td>0-1</td><td>8.6%</td><td>11.64</td></tr><tr><td>2-0</td><td>7.9%</td><td>12.74</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>7.5%</td><td>8.6%</td><td>4.9%</td><td>1.9%</td><td>0.5%</td></tr><tr><th>1 G</th><td>10.9%</td><td>12.4%</td><td>7.1%</td><td>2.7%</td><td>0.8%</td></tr><tr><th>2 G</th><td>7.9%</td><td>9.0%</td><td>5.1%</td><td>2.0%</td><td>0.6%</td></tr><tr><th>3 G</th><td>3.8%</td><td>4.3%</td><td>2.5%</td><td>0.9%</td><td>0.3%</td></tr><tr><th>4 G</th><td>1.4%</td><td>1.6%</td><td>0.9%</td><td>0.3%</td><td>0.1%</td></tr></tbody></table></div></div>
+        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>2-0</td><td>9.7%</td><td>10.26</td></tr><tr><td>2-1</td><td>9.5%</td><td>10.49</td></tr><tr><td>1-0</td><td>8.0%</td><td>12.54</td></tr><tr><td>3-0</td><td>7.9%</td><td>12.59</td></tr><tr><td>1-1</td><td>7.8%</td><td>12.82</td></tr></tbody></table>
+      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>3.3%</td><td>3.2%</td><td>1.6%</td><td>0.5%</td><td>0.1%</td></tr><tr><th>1 G</th><td>8.0%</td><td>7.8%</td><td>3.8%</td><td>1.2%</td><td>0.3%</td></tr><tr><th>2 G</th><td>9.7%</td><td>9.5%</td><td>4.7%</td><td>1.5%</td><td>0.4%</td></tr><tr><th>3 G</th><td>7.9%</td><td>7.8%</td><td>3.8%</td><td>1.2%</td><td>0.3%</td></tr><tr><th>4 G</th><td>4.9%</td><td>4.7%</td><td>2.3%</td><td>0.8%</td><td>0.2%</td></tr></tbody></table></div></div>
     </section>
-    <section class="match" data-match="Serbia vs Netherlands" data-date="2026-09-27">
-      <h2>Serbia <span>vs</span> Netherlands <span class="match-date-badge">📅 2026-09-27 · 11:00:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>0.95</strong></div>
-      <div><small>xG visitante</small><strong>1.39</strong></div>
-      <div><small>xG total</small><strong>2.34</strong></div>
-      <div><small>Señal</small><strong>Ventaja moderada: Netherlands (47.1%)</strong></div></div>
+    <section class="match" data-match="Scotland vs Switzerland" data-date="2026-09-29">
+      <h2>Scotland <span>vs</span> Switzerland <span class="match-date-badge">📅 2026-09-29 · 13:45:00</span></h2>
+      <div class="metrics"><div><small>xG local</small><strong>1.13</strong></div>
+      <div><small>xG visitante</small><strong>1.51</strong></div>
+      <div><small>xG total</small><strong>2.64</strong></div>
+      <div><small>Señal</small><strong>Ventaja moderada: Switzerland (46.1%)</strong></div></div>
       <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>25.7%</td><td>3.89</td></tr><tr><td>Empate</td><td>27.2%</td><td>3.67</td></tr><tr><td>Visitante</td><td>47.1%</td><td>2.13</td></tr><tr><td>1X</td><td>52.9%</td><td>1.89</td></tr><tr><td>X2</td><td>74.3%</td><td>1.35</td></tr><tr><td>12</td><td>72.8%</td><td>1.37</td></tr></tbody></table>
+        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>28.3%</td><td>3.53</td></tr><tr><td>Empate</td><td>25.6%</td><td>3.91</td></tr><tr><td>Visitante</td><td>46.1%</td><td>2.17</td></tr><tr><td>1X</td><td>53.9%</td><td>1.86</td></tr><tr><td>X2</td><td>71.7%</td><td>1.40</td></tr><tr><td>12</td><td>74.4%</td><td>1.34</td></tr></tbody></table>
       </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>90.4%</td><td>1.11</td><td>9.6%</td><td>10.40</td></tr><tr><td>1.5</td><td>67.9%</td><td>1.47</td><td>32.1%</td><td>3.11</td></tr><tr><td>2.5</td><td>41.5%</td><td>2.41</td><td>58.5%</td><td>1.71</td></tr><tr><td>3.5</td><td>20.9%</td><td>4.78</td><td>79.1%</td><td>1.26</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 45.0% &nbsp; <strong>BTTS no:</strong> 55.0%</p>
+        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>92.9%</td><td>1.08</td><td>7.1%</td><td>14.05</td></tr><tr><td>1.5</td><td>74.1%</td><td>1.35</td><td>25.9%</td><td>3.86</td></tr><tr><td>2.5</td><td>49.2%</td><td>2.03</td><td>50.8%</td><td>1.97</td></tr><tr><td>3.5</td><td>27.3%</td><td>3.66</td><td>72.7%</td><td>1.38</td></tr></tbody></table>
+        <p><strong>BTTS sí:</strong> 51.0% &nbsp; <strong>BTTS no:</strong> 49.0%</p>
       </div></div>
       <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>0-1</td><td>13.4%</td><td>7.48</td></tr><tr><td>1-1</td><td>12.7%</td><td>7.86</td></tr><tr><td>0-0</td><td>9.6%</td><td>10.40</td></tr><tr><td>0-2</td><td>9.3%</td><td>10.76</td></tr><tr><td>1-0</td><td>9.2%</td><td>10.93</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>9.6%</td><td>13.4%</td><td>9.3%</td><td>4.3%</td><td>1.5%</td></tr><tr><th>1 G</th><td>9.2%</td><td>12.7%</td><td>8.8%</td><td>4.1%</td><td>1.4%</td></tr><tr><th>2 G</th><td>4.4%</td><td>6.1%</td><td>4.2%</td><td>1.9%</td><td>0.7%</td></tr><tr><th>3 G</th><td>1.4%</td><td>1.9%</td><td>1.3%</td><td>0.6%</td><td>0.2%</td></tr><tr><th>4 G</th><td>0.3%</td><td>0.5%</td><td>0.3%</td><td>0.1%</td><td>0.1%</td></tr></tbody></table></div></div>
+        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-1</td><td>12.2%</td><td>8.22</td></tr><tr><td>0-1</td><td>10.8%</td><td>9.28</td></tr><tr><td>1-2</td><td>9.2%</td><td>10.86</td></tr><tr><td>0-2</td><td>8.2%</td><td>12.26</td></tr><tr><td>1-0</td><td>8.0%</td><td>12.45</td></tr></tbody></table>
+      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>7.1%</td><td>10.8%</td><td>8.2%</td><td>4.1%</td><td>1.6%</td></tr><tr><th>1 G</th><td>8.0%</td><td>12.2%</td><td>9.2%</td><td>4.6%</td><td>1.8%</td></tr><tr><th>2 G</th><td>4.5%</td><td>6.9%</td><td>5.2%</td><td>2.6%</td><td>1.0%</td></tr><tr><th>3 G</th><td>1.7%</td><td>2.6%</td><td>2.0%</td><td>1.0%</td><td>0.4%</td></tr><tr><th>4 G</th><td>0.5%</td><td>0.7%</td><td>0.6%</td><td>0.3%</td><td>0.1%</td></tr></tbody></table></div></div>
     </section>
-    <section class="match" data-match="Germany vs Greece" data-date="2026-09-27">
-      <h2>Germany <span>vs</span> Greece <span class="match-date-badge">📅 2026-09-27 · 13:45:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>1.98</strong></div>
-      <div><small>xG visitante</small><strong>0.92</strong></div>
-      <div><small>xG total</small><strong>2.90</strong></div>
-      <div><small>Señal</small><strong>Ventaja clara: Germany (62.1%)</strong></div></div>
+    <section class="match" data-match="Slovenia vs North Macedonia" data-date="2026-09-29">
+      <h2>Slovenia <span>vs</span> North Macedonia <span class="match-date-badge">📅 2026-09-29 · 13:45:00</span></h2>
+      <div class="metrics"><div><small>xG local</small><strong>1.08</strong></div>
+      <div><small>xG visitante</small><strong>0.69</strong></div>
+      <div><small>xG total</small><strong>1.78</strong></div>
+      <div><small>Señal</small><strong>Partido abierto: Slovenia (44.5%)</strong></div></div>
       <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>62.1%</td><td>1.61</td></tr><tr><td>Empate</td><td>21.1%</td><td>4.74</td></tr><tr><td>Visitante</td><td>16.7%</td><td>5.97</td></tr><tr><td>1X</td><td>83.3%</td><td>1.20</td></tr><tr><td>X2</td><td>37.9%</td><td>2.64</td></tr><tr><td>12</td><td>78.9%</td><td>1.27</td></tr></tbody></table>
+        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>44.5%</td><td>2.25</td></tr><tr><td>Empate</td><td>32.2%</td><td>3.10</td></tr><tr><td>Visitante</td><td>23.3%</td><td>4.30</td></tr><tr><td>1X</td><td>76.7%</td><td>1.30</td></tr><tr><td>X2</td><td>55.5%</td><td>1.80</td></tr><tr><td>12</td><td>67.8%</td><td>1.48</td></tr></tbody></table>
       </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>94.5%</td><td>1.06</td><td>5.5%</td><td>18.15</td></tr><tr><td>1.5</td><td>78.5%</td><td>1.27</td><td>21.5%</td><td>4.66</td></tr><tr><td>2.5</td><td>55.4%</td><td>1.81</td><td>44.6%</td><td>2.24</td></tr><tr><td>3.5</td><td>33.0%</td><td>3.03</td><td>67.0%</td><td>1.49</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 48.5% &nbsp; <strong>BTTS no:</strong> 51.5%</p>
+        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>83.1%</td><td>1.20</td><td>16.9%</td><td>5.90</td></tr><tr><td>1.5</td><td>53.0%</td><td>1.89</td><td>47.0%</td><td>2.13</td></tr><tr><td>2.5</td><td>26.3%</td><td>3.80</td><td>73.7%</td><td>1.36</td></tr><tr><td>3.5</td><td>10.5%</td><td>9.54</td><td>89.5%</td><td>1.12</td></tr></tbody></table>
+        <p><strong>BTTS sí:</strong> 32.8% &nbsp; <strong>BTTS no:</strong> 67.2%</p>
       </div></div>
       <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-0</td><td>10.9%</td><td>9.16</td></tr><tr><td>2-0</td><td>10.8%</td><td>9.25</td></tr><tr><td>1-1</td><td>10.0%</td><td>9.98</td></tr><tr><td>2-1</td><td>9.9%</td><td>10.08</td></tr><tr><td>3-0</td><td>7.1%</td><td>14.02</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>5.5%</td><td>5.1%</td><td>2.3%</td><td>0.7%</td><td>0.2%</td></tr><tr><th>1 G</th><td>10.9%</td><td>10.0%</td><td>4.6%</td><td>1.4%</td><td>0.3%</td></tr><tr><th>2 G</th><td>10.8%</td><td>9.9%</td><td>4.6%</td><td>1.4%</td><td>0.3%</td></tr><tr><th>3 G</th><td>7.1%</td><td>6.6%</td><td>3.0%</td><td>0.9%</td><td>0.2%</td></tr><tr><th>4 G</th><td>3.5%</td><td>3.2%</td><td>1.5%</td><td>0.5%</td><td>0.1%</td></tr></tbody></table></div></div>
+        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-0</td><td>18.3%</td><td>5.45</td></tr><tr><td>0-0</td><td>16.9%</td><td>5.90</td></tr><tr><td>1-1</td><td>12.7%</td><td>7.87</td></tr><tr><td>0-1</td><td>11.7%</td><td>8.52</td></tr><tr><td>2-0</td><td>9.9%</td><td>10.08</td></tr></tbody></table>
+      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>16.9%</td><td>11.7%</td><td>4.1%</td><td>0.9%</td><td>0.2%</td></tr><tr><th>1 G</th><td>18.3%</td><td>12.7%</td><td>4.4%</td><td>1.0%</td><td>0.2%</td></tr><tr><th>2 G</th><td>9.9%</td><td>6.9%</td><td>2.4%</td><td>0.6%</td><td>0.1%</td></tr><tr><th>3 G</th><td>3.6%</td><td>2.5%</td><td>0.9%</td><td>0.2%</td><td>0.0%</td></tr><tr><th>4 G</th><td>1.0%</td><td>0.7%</td><td>0.2%</td><td>0.1%</td><td>0.0%</td></tr></tbody></table></div></div>
     </section>
-    <section class="match" data-match="Denmark vs Wales" data-date="2026-09-27">
-      <h2>Denmark <span>vs</span> Wales <span class="match-date-badge">📅 2026-09-27 · 11:00:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>1.80</strong></div>
-      <div><small>xG visitante</small><strong>0.68</strong></div>
-      <div><small>xG total</small><strong>2.48</strong></div>
-      <div><small>Señal</small><strong>Ventaja clara: Denmark (64.2%)</strong></div></div>
+    <section class="match" data-match="New York Red Bulls vs St.Louis City" data-date="2026-09-30">
+      <h2>New York Red Bulls <span>vs</span> St.Louis City <span class="match-date-badge">📅 2026-09-30 · 18:30:00</span></h2>
+      <div class="metrics"><div><small>xG local</small><strong>1.56</strong></div>
+      <div><small>xG visitante</small><strong>2.20</strong></div>
+      <div><small>xG total</small><strong>3.76</strong></div>
+      <div><small>Señal</small><strong>Ventaja moderada: St.Louis City (52.4%)</strong></div></div>
       <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>64.2%</td><td>1.56</td></tr><tr><td>Empate</td><td>22.2%</td><td>4.50</td></tr><tr><td>Visitante</td><td>13.6%</td><td>7.36</td></tr><tr><td>1X</td><td>86.4%</td><td>1.16</td></tr><tr><td>X2</td><td>35.8%</td><td>2.79</td></tr><tr><td>12</td><td>77.8%</td><td>1.29</td></tr></tbody></table>
+        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>27.2%</td><td>3.67</td></tr><tr><td>Empate</td><td>20.4%</td><td>4.90</td></tr><tr><td>Visitante</td><td>52.4%</td><td>1.91</td></tr><tr><td>1X</td><td>47.6%</td><td>2.10</td></tr><tr><td>X2</td><td>72.8%</td><td>1.37</td></tr><tr><td>12</td><td>79.6%</td><td>1.26</td></tr></tbody></table>
       </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>91.6%</td><td>1.09</td><td>8.4%</td><td>11.97</td></tr><tr><td>1.5</td><td>70.9%</td><td>1.41</td><td>29.1%</td><td>3.44</td></tr><tr><td>2.5</td><td>45.2%</td><td>2.21</td><td>54.8%</td><td>1.82</td></tr><tr><td>3.5</td><td>23.9%</td><td>4.19</td><td>76.1%</td><td>1.31</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 39.4% &nbsp; <strong>BTTS no:</strong> 60.6%</p>
-      </div></div>
-      <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-0</td><td>15.0%</td><td>6.65</td></tr><tr><td>2-0</td><td>13.5%</td><td>7.39</td></tr><tr><td>1-1</td><td>10.3%</td><td>9.74</td></tr><tr><td>2-1</td><td>9.2%</td><td>10.83</td></tr><tr><td>0-0</td><td>8.4%</td><td>11.97</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>8.4%</td><td>5.7%</td><td>1.9%</td><td>0.4%</td><td>0.1%</td></tr><tr><th>1 G</th><td>15.0%</td><td>10.3%</td><td>3.5%</td><td>0.8%</td><td>0.1%</td></tr><tr><th>2 G</th><td>13.5%</td><td>9.2%</td><td>3.2%</td><td>0.7%</td><td>0.1%</td></tr><tr><th>3 G</th><td>8.1%</td><td>5.5%</td><td>1.9%</td><td>0.4%</td><td>0.1%</td></tr><tr><th>4 G</th><td>3.7%</td><td>2.5%</td><td>0.9%</td><td>0.2%</td><td>0.0%</td></tr></tbody></table></div></div>
-    </section>
-    <section class="match" data-match="Norway vs Portugal" data-date="2026-09-27">
-      <h2>Norway <span>vs</span> Portugal <span class="match-date-badge">📅 2026-09-27 · 13:45:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>1.95</strong></div>
-      <div><small>xG visitante</small><strong>1.60</strong></div>
-      <div><small>xG total</small><strong>3.55</strong></div>
-      <div><small>Señal</small><strong>Ventaja moderada: Norway (46.2%)</strong></div></div>
-      <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>46.2%</td><td>2.17</td></tr><tr><td>Empate</td><td>21.8%</td><td>4.59</td></tr><tr><td>Visitante</td><td>32.0%</td><td>3.12</td></tr><tr><td>1X</td><td>68.0%</td><td>1.47</td></tr><tr><td>X2</td><td>53.8%</td><td>1.86</td></tr><tr><td>12</td><td>78.2%</td><td>1.28</td></tr></tbody></table>
-      </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>97.1%</td><td>1.03</td><td>2.9%</td><td>34.79</td></tr><tr><td>1.5</td><td>86.9%</td><td>1.15</td><td>13.1%</td><td>7.65</td></tr><tr><td>2.5</td><td>68.8%</td><td>1.45</td><td>31.2%</td><td>3.21</td></tr><tr><td>3.5</td><td>47.4%</td><td>2.11</td><td>52.6%</td><td>1.90</td></tr></tbody></table>
+        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>97.7%</td><td>1.02</td><td>2.3%</td><td>43.06</td></tr><tr><td>1.5</td><td>88.9%</td><td>1.12</td><td>11.1%</td><td>9.04</td></tr><tr><td>2.5</td><td>72.5%</td><td>1.38</td><td>27.5%</td><td>3.64</td></tr><tr><td>3.5</td><td>51.9%</td><td>1.93</td><td>48.1%</td><td>2.08</td></tr></tbody></table>
         <p><strong>BTTS sí:</strong> 62.7% &nbsp; <strong>BTTS no:</strong> 37.3%</p>
       </div></div>
       <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-1</td><td>9.0%</td><td>11.15</td></tr><tr><td>2-1</td><td>8.7%</td><td>11.45</td></tr><tr><td>1-2</td><td>7.2%</td><td>13.94</td></tr><tr><td>2-2</td><td>7.0%</td><td>14.30</td></tr><tr><td>3-1</td><td>5.7%</td><td>17.62</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>2.9%</td><td>4.6%</td><td>3.7%</td><td>2.0%</td><td>0.8%</td></tr><tr><th>1 G</th><td>5.6%</td><td>9.0%</td><td>7.2%</td><td>3.8%</td><td>1.5%</td></tr><tr><th>2 G</th><td>5.5%</td><td>8.7%</td><td>7.0%</td><td>3.7%</td><td>1.5%</td></tr><tr><th>3 G</th><td>3.5%</td><td>5.7%</td><td>4.5%</td><td>2.4%</td><td>1.0%</td></tr><tr><th>4 G</th><td>1.7%</td><td>2.8%</td><td>2.2%</td><td>1.2%</td><td>0.5%</td></tr></tbody></table></div></div>
+        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-2</td><td>8.8%</td><td>11.38</td></tr><tr><td>1-1</td><td>8.0%</td><td>12.53</td></tr><tr><td>2-2</td><td>6.9%</td><td>14.59</td></tr><tr><td>1-3</td><td>6.5%</td><td>15.50</td></tr><tr><td>2-1</td><td>6.2%</td><td>16.07</td></tr></tbody></table>
+      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>2.3%</td><td>5.1%</td><td>5.6%</td><td>4.1%</td><td>2.3%</td></tr><tr><th>1 G</th><td>3.6%</td><td>8.0%</td><td>8.8%</td><td>6.5%</td><td>3.6%</td></tr><tr><th>2 G</th><td>2.8%</td><td>6.2%</td><td>6.9%</td><td>5.0%</td><td>2.8%</td></tr><tr><th>3 G</th><td>1.5%</td><td>3.2%</td><td>3.6%</td><td>2.6%</td><td>1.4%</td></tr><tr><th>4 G</th><td>0.6%</td><td>1.3%</td><td>1.4%</td><td>1.0%</td><td>0.6%</td></tr></tbody></table></div></div>
     </section>
-    <section class="match" data-match="Georgia vs Ukraine" data-date="2026-09-28">
-      <h2>Georgia <span>vs</span> Ukraine <span class="match-date-badge">📅 2026-09-28 · 11:00:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>1.52</strong></div>
-      <div><small>xG visitante</small><strong>1.05</strong></div>
-      <div><small>xG total</small><strong>2.57</strong></div>
-      <div><small>Señal</small><strong>Ventaja moderada: Georgia (48.1%)</strong></div></div>
+    <section class="match" data-match="Botafogo-SP vs Ponte Preta" data-date="2026-09-29">
+      <h2>Botafogo-SP <span>vs</span> Ponte Preta <span class="match-date-badge">📅 2026-09-29 · 17:30:00</span></h2>
+      <div class="metrics"><div><small>xG local</small><strong>1.68</strong></div>
+      <div><small>xG visitante</small><strong>0.54</strong></div>
+      <div><small>xG total</small><strong>2.22</strong></div>
+      <div><small>Señal</small><strong>Ventaja clara: Botafogo-SP (65.2%)</strong></div></div>
       <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>48.1%</td><td>2.08</td></tr><tr><td>Empate</td><td>25.7%</td><td>3.89</td></tr><tr><td>Visitante</td><td>26.3%</td><td>3.81</td></tr><tr><td>1X</td><td>73.7%</td><td>1.36</td></tr><tr><td>X2</td><td>51.9%</td><td>1.93</td></tr><tr><td>12</td><td>74.3%</td><td>1.35</td></tr></tbody></table>
+        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>65.2%</td><td>1.53</td></tr><tr><td>Empate</td><td>23.2%</td><td>4.30</td></tr><tr><td>Visitante</td><td>11.6%</td><td>8.63</td></tr><tr><td>1X</td><td>88.4%</td><td>1.13</td></tr><tr><td>X2</td><td>34.8%</td><td>2.87</td></tr><tr><td>12</td><td>76.8%</td><td>1.30</td></tr></tbody></table>
       </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>92.4%</td><td>1.08</td><td>7.6%</td><td>13.10</td></tr><tr><td>1.5</td><td>72.7%</td><td>1.38</td><td>27.3%</td><td>3.67</td></tr><tr><td>2.5</td><td>47.5%</td><td>2.11</td><td>52.5%</td><td>1.90</td></tr><tr><td>3.5</td><td>25.8%</td><td>3.88</td><td>74.2%</td><td>1.35</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 49.2% &nbsp; <strong>BTTS no:</strong> 50.8%</p>
+        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>89.1%</td><td>1.12</td><td>10.9%</td><td>9.21</td></tr><tr><td>1.5</td><td>65.0%</td><td>1.54</td><td>35.0%</td><td>2.86</td></tr><tr><td>2.5</td><td>38.3%</td><td>2.61</td><td>61.7%</td><td>1.62</td></tr><tr><td>3.5</td><td>18.5%</td><td>5.41</td><td>81.5%</td><td>1.23</td></tr></tbody></table>
+        <p><strong>BTTS sí:</strong> 32.9% &nbsp; <strong>BTTS no:</strong> 67.1%</p>
       </div></div>
       <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-1</td><td>12.2%</td><td>8.19</td></tr><tr><td>1-0</td><td>11.6%</td><td>8.62</td></tr><tr><td>2-1</td><td>9.3%</td><td>10.77</td></tr><tr><td>2-0</td><td>8.8%</td><td>11.34</td></tr><tr><td>0-1</td><td>8.0%</td><td>12.44</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>7.6%</td><td>8.0%</td><td>4.2%</td><td>1.5%</td><td>0.4%</td></tr><tr><th>1 G</th><td>11.6%</td><td>12.2%</td><td>6.4%</td><td>2.3%</td><td>0.6%</td></tr><tr><th>2 G</th><td>8.8%</td><td>9.3%</td><td>4.9%</td><td>1.7%</td><td>0.5%</td></tr><tr><th>3 G</th><td>4.5%</td><td>4.7%</td><td>2.5%</td><td>0.9%</td><td>0.2%</td></tr><tr><th>4 G</th><td>1.7%</td><td>1.8%</td><td>0.9%</td><td>0.3%</td><td>0.1%</td></tr></tbody></table></div></div>
-    </section>
-    <section class="match" data-match="Northern Ireland vs Hungary" data-date="2026-09-28">
-      <h2>Northern Ireland <span>vs</span> Hungary <span class="match-date-badge">📅 2026-09-28 · 13:45:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>1.30</strong></div>
-      <div><small>xG visitante</small><strong>0.84</strong></div>
-      <div><small>xG total</small><strong>2.14</strong></div>
-      <div><small>Señal</small><strong>Ventaja moderada: Northern Ireland (47.4%)</strong></div></div>
-      <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>47.4%</td><td>2.11</td></tr><tr><td>Empate</td><td>28.5%</td><td>3.50</td></tr><tr><td>Visitante</td><td>24.0%</td><td>4.16</td></tr><tr><td>1X</td><td>76.0%</td><td>1.32</td></tr><tr><td>X2</td><td>52.6%</td><td>1.90</td></tr><tr><td>12</td><td>71.5%</td><td>1.40</td></tr></tbody></table>
-      </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>88.3%</td><td>1.13</td><td>11.7%</td><td>8.52</td></tr><tr><td>1.5</td><td>63.1%</td><td>1.58</td><td>36.9%</td><td>2.71</td></tr><tr><td>2.5</td><td>36.2%</td><td>2.76</td><td>63.8%</td><td>1.57</td></tr><tr><td>3.5</td><td>17.0%</td><td>5.90</td><td>83.0%</td><td>1.20</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 40.6% &nbsp; <strong>BTTS no:</strong> 59.4%</p>
-      </div></div>
-      <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-0</td><td>15.3%</td><td>6.54</td></tr><tr><td>1-1</td><td>12.8%</td><td>7.79</td></tr><tr><td>0-0</td><td>11.7%</td><td>8.52</td></tr><tr><td>2-0</td><td>10.0%</td><td>10.03</td></tr><tr><td>0-1</td><td>9.8%</td><td>10.16</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>11.7%</td><td>9.8%</td><td>4.1%</td><td>1.2%</td><td>0.2%</td></tr><tr><th>1 G</th><td>15.3%</td><td>12.8%</td><td>5.4%</td><td>1.5%</td><td>0.3%</td></tr><tr><th>2 G</th><td>10.0%</td><td>8.4%</td><td>3.5%</td><td>1.0%</td><td>0.2%</td></tr><tr><th>3 G</th><td>4.3%</td><td>3.6%</td><td>1.5%</td><td>0.4%</td><td>0.1%</td></tr><tr><th>4 G</th><td>1.4%</td><td>1.2%</td><td>0.5%</td><td>0.1%</td><td>0.0%</td></tr></tbody></table></div></div>
-    </section>
-    <section class="match" data-match="Austria vs Kosovo" data-date="2026-09-27">
-      <h2>Austria <span>vs</span> Kosovo <span class="match-date-badge">📅 2026-09-27 · 11:00:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>1.70</strong></div>
-      <div><small>xG visitante</small><strong>0.88</strong></div>
-      <div><small>xG total</small><strong>2.58</strong></div>
-      <div><small>Señal</small><strong>Ventaja moderada: Austria (56.7%)</strong></div></div>
-      <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>56.7%</td><td>1.76</td></tr><tr><td>Empate</td><td>23.9%</td><td>4.18</td></tr><tr><td>Visitante</td><td>19.3%</td><td>5.17</td></tr><tr><td>1X</td><td>80.7%</td><td>1.24</td></tr><tr><td>X2</td><td>43.3%</td><td>2.31</td></tr><tr><td>12</td><td>76.1%</td><td>1.31</td></tr></tbody></table>
-      </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>92.4%</td><td>1.08</td><td>7.6%</td><td>13.20</td></tr><tr><td>1.5</td><td>72.9%</td><td>1.37</td><td>27.1%</td><td>3.69</td></tr><tr><td>2.5</td><td>47.7%</td><td>2.10</td><td>52.3%</td><td>1.91</td></tr><tr><td>3.5</td><td>26.0%</td><td>3.85</td><td>74.0%</td><td>1.35</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 46.0% &nbsp; <strong>BTTS no:</strong> 54.0%</p>
-      </div></div>
-      <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-0</td><td>12.9%</td><td>7.77</td></tr><tr><td>1-1</td><td>11.3%</td><td>8.82</td></tr><tr><td>2-0</td><td>10.9%</td><td>9.14</td></tr><tr><td>2-1</td><td>9.6%</td><td>10.38</td></tr><tr><td>0-0</td><td>7.6%</td><td>13.20</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>7.6%</td><td>6.7%</td><td>2.9%</td><td>0.9%</td><td>0.2%</td></tr><tr><th>1 G</th><td>12.9%</td><td>11.3%</td><td>5.0%</td><td>1.5%</td><td>0.3%</td></tr><tr><th>2 G</th><td>10.9%</td><td>9.6%</td><td>4.2%</td><td>1.2%</td><td>0.3%</td></tr><tr><th>3 G</th><td>6.2%</td><td>5.5%</td><td>2.4%</td><td>0.7%</td><td>0.2%</td></tr><tr><th>4 G</th><td>2.6%</td><td>2.3%</td><td>1.0%</td><td>0.3%</td><td>0.1%</td></tr></tbody></table></div></div>
-    </section>
-    <section class="match" data-match="Israel vs Ireland" data-date="2026-09-27">
-      <h2>Israel <span>vs</span> Ireland <span class="match-date-badge">📅 2026-09-27 · 13:45:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>1.33</strong></div>
-      <div><small>xG visitante</small><strong>1.13</strong></div>
-      <div><small>xG total</small><strong>2.46</strong></div>
-      <div><small>Señal</small><strong>Partido abierto: Israel (41.4%)</strong></div></div>
-      <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>41.4%</td><td>2.42</td></tr><tr><td>Empate</td><td>27.1%</td><td>3.69</td></tr><tr><td>Visitante</td><td>31.5%</td><td>3.17</td></tr><tr><td>1X</td><td>68.5%</td><td>1.46</td></tr><tr><td>X2</td><td>58.6%</td><td>1.71</td></tr><tr><td>12</td><td>72.9%</td><td>1.37</td></tr></tbody></table>
-      </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>91.5%</td><td>1.09</td><td>8.5%</td><td>11.70</td></tr><tr><td>1.5</td><td>70.4%</td><td>1.42</td><td>29.6%</td><td>3.38</td></tr><tr><td>2.5</td><td>44.6%</td><td>2.24</td><td>55.4%</td><td>1.80</td></tr><tr><td>3.5</td><td>23.4%</td><td>4.28</td><td>76.6%</td><td>1.31</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 48.5% &nbsp; <strong>BTTS no:</strong> 51.5%</p>
-      </div></div>
-      <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-1</td><td>12.8%</td><td>7.79</td></tr><tr><td>1-0</td><td>11.4%</td><td>8.78</td></tr><tr><td>0-1</td><td>9.6%</td><td>10.38</td></tr><tr><td>2-1</td><td>8.6%</td><td>11.69</td></tr><tr><td>0-0</td><td>8.5%</td><td>11.70</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>8.5%</td><td>9.6%</td><td>5.4%</td><td>2.0%</td><td>0.6%</td></tr><tr><th>1 G</th><td>11.4%</td><td>12.8%</td><td>7.2%</td><td>2.7%</td><td>0.8%</td></tr><tr><th>2 G</th><td>7.6%</td><td>8.6%</td><td>4.8%</td><td>1.8%</td><td>0.5%</td></tr><tr><th>3 G</th><td>3.4%</td><td>3.8%</td><td>2.1%</td><td>0.8%</td><td>0.2%</td></tr><tr><th>4 G</th><td>1.1%</td><td>1.3%</td><td>0.7%</td><td>0.3%</td><td>0.1%</td></tr></tbody></table></div></div>
-    </section>
-    <section class="match" data-match="Romania vs Bosnia &amp; Herzegovina" data-date="2026-09-28">
-      <h2>Romania <span>vs</span> Bosnia &amp; Herzegovina <span class="match-date-badge">📅 2026-09-28 · 13:45:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>1.71</strong></div>
-      <div><small>xG visitante</small><strong>0.83</strong></div>
-      <div><small>xG total</small><strong>2.54</strong></div>
-      <div><small>Señal</small><strong>Ventaja moderada: Romania (58.2%)</strong></div></div>
-      <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>58.2%</td><td>1.72</td></tr><tr><td>Empate</td><td>23.8%</td><td>4.21</td></tr><tr><td>Visitante</td><td>18.1%</td><td>5.53</td></tr><tr><td>1X</td><td>81.9%</td><td>1.22</td></tr><tr><td>X2</td><td>41.8%</td><td>2.39</td></tr><tr><td>12</td><td>76.2%</td><td>1.31</td></tr></tbody></table>
-      </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>92.1%</td><td>1.09</td><td>7.9%</td><td>12.69</td></tr><tr><td>1.5</td><td>72.1%</td><td>1.39</td><td>27.9%</td><td>3.58</td></tr><tr><td>2.5</td><td>46.7%</td><td>2.14</td><td>53.3%</td><td>1.87</td></tr><tr><td>3.5</td><td>25.1%</td><td>3.98</td><td>74.9%</td><td>1.34</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 44.4% &nbsp; <strong>BTTS no:</strong> 55.6%</p>
-      </div></div>
-      <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-0</td><td>13.5%</td><td>7.43</td></tr><tr><td>2-0</td><td>11.5%</td><td>8.70</td></tr><tr><td>1-1</td><td>11.2%</td><td>8.92</td></tr><tr><td>2-1</td><td>9.6%</td><td>10.45</td></tr><tr><td>0-0</td><td>7.9%</td><td>12.69</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>7.9%</td><td>6.6%</td><td>2.7%</td><td>0.8%</td><td>0.2%</td></tr><tr><th>1 G</th><td>13.5%</td><td>11.2%</td><td>4.7%</td><td>1.3%</td><td>0.3%</td></tr><tr><th>2 G</th><td>11.5%</td><td>9.6%</td><td>4.0%</td><td>1.1%</td><td>0.2%</td></tr><tr><th>3 G</th><td>6.5%</td><td>5.5%</td><td>2.3%</td><td>0.6%</td><td>0.1%</td></tr><tr><th>4 G</th><td>2.8%</td><td>2.3%</td><td>1.0%</td><td>0.3%</td><td>0.1%</td></tr></tbody></table></div></div>
-    </section>
-    <section class="match" data-match="Sweden vs Poland" data-date="2026-09-28">
-      <h2>Sweden <span>vs</span> Poland <span class="match-date-badge">📅 2026-09-28 · 13:45:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>2.21</strong></div>
-      <div><small>xG visitante</small><strong>1.33</strong></div>
-      <div><small>xG total</small><strong>3.54</strong></div>
-      <div><small>Señal</small><strong>Ventaja moderada: Sweden (57.3%)</strong></div></div>
-      <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>57.3%</td><td>1.74</td></tr><tr><td>Empate</td><td>20.2%</td><td>4.96</td></tr><tr><td>Visitante</td><td>22.5%</td><td>4.45</td></tr><tr><td>1X</td><td>77.5%</td><td>1.29</td></tr><tr><td>X2</td><td>42.7%</td><td>2.34</td></tr><tr><td>12</td><td>79.8%</td><td>1.25</td></tr></tbody></table>
-      </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>97.1%</td><td>1.03</td><td>2.9%</td><td>34.49</td></tr><tr><td>1.5</td><td>86.8%</td><td>1.15</td><td>13.2%</td><td>7.60</td></tr><tr><td>2.5</td><td>68.7%</td><td>1.46</td><td>31.3%</td><td>3.19</td></tr><tr><td>3.5</td><td>47.2%</td><td>2.12</td><td>52.8%</td><td>1.89</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 59.2% &nbsp; <strong>BTTS no:</strong> 40.8%</p>
-      </div></div>
-      <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>2-1</td><td>9.4%</td><td>10.62</td></tr><tr><td>1-1</td><td>8.5%</td><td>11.73</td></tr><tr><td>2-0</td><td>7.1%</td><td>14.14</td></tr><tr><td>3-1</td><td>6.9%</td><td>14.42</td></tr><tr><td>1-0</td><td>6.4%</td><td>15.61</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>2.9%</td><td>3.9%</td><td>2.6%</td><td>1.1%</td><td>0.4%</td></tr><tr><th>1 G</th><td>6.4%</td><td>8.5%</td><td>5.7%</td><td>2.5%</td><td>0.8%</td></tr><tr><th>2 G</th><td>7.1%</td><td>9.4%</td><td>6.3%</td><td>2.8%</td><td>0.9%</td></tr><tr><th>3 G</th><td>5.2%</td><td>6.9%</td><td>4.6%</td><td>2.1%</td><td>0.7%</td></tr><tr><th>4 G</th><td>2.9%</td><td>3.8%</td><td>2.6%</td><td>1.1%</td><td>0.4%</td></tr></tbody></table></div></div>
-    </section>
-    <section class="match" data-match="Armenia vs Montenegro" data-date="2026-09-28">
-      <h2>Armenia <span>vs</span> Montenegro <span class="match-date-badge">📅 2026-09-28 · 11:00:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>1.50</strong></div>
-      <div><small>xG visitante</small><strong>1.60</strong></div>
-      <div><small>xG total</small><strong>3.10</strong></div>
-      <div><small>Señal</small><strong>Partido abierto: Montenegro (40.3%)</strong></div></div>
-      <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>35.9%</td><td>2.79</td></tr><tr><td>Empate</td><td>23.8%</td><td>4.20</td></tr><tr><td>Visitante</td><td>40.3%</td><td>2.48</td></tr><tr><td>1X</td><td>59.7%</td><td>1.68</td></tr><tr><td>X2</td><td>64.1%</td><td>1.56</td></tr><tr><td>12</td><td>76.2%</td><td>1.31</td></tr></tbody></table>
-      </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>95.5%</td><td>1.05</td><td>4.5%</td><td>22.23</td></tr><tr><td>1.5</td><td>81.5%</td><td>1.23</td><td>18.5%</td><td>5.42</td></tr><tr><td>2.5</td><td>59.9%</td><td>1.67</td><td>40.1%</td><td>2.49</td></tr><tr><td>3.5</td><td>37.5%</td><td>2.66</td><td>62.5%</td><td>1.60</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 58.7% &nbsp; <strong>BTTS no:</strong> 41.3%</p>
-      </div></div>
-      <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-1</td><td>10.8%</td><td>9.25</td></tr><tr><td>1-2</td><td>8.7%</td><td>11.55</td></tr><tr><td>2-1</td><td>8.1%</td><td>12.34</td></tr><tr><td>0-1</td><td>7.2%</td><td>13.87</td></tr><tr><td>1-0</td><td>6.7%</td><td>14.83</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>4.5%</td><td>7.2%</td><td>5.8%</td><td>3.1%</td><td>1.2%</td></tr><tr><th>1 G</th><td>6.7%</td><td>10.8%</td><td>8.7%</td><td>4.6%</td><td>1.9%</td></tr><tr><th>2 G</th><td>5.1%</td><td>8.1%</td><td>6.5%</td><td>3.5%</td><td>1.4%</td></tr><tr><th>3 G</th><td>2.5%</td><td>4.0%</td><td>3.2%</td><td>1.7%</td><td>0.7%</td></tr><tr><th>4 G</th><td>0.9%</td><td>1.5%</td><td>1.2%</td><td>0.6%</td><td>0.3%</td></tr></tbody></table></div></div>
-    </section>
-    <section class="match" data-match="Latvia vs Cyprus" data-date="2026-09-28">
-      <h2>Latvia <span>vs</span> Cyprus <span class="match-date-badge">📅 2026-09-28 · 11:00:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>1.09</strong></div>
-      <div><small>xG visitante</small><strong>1.02</strong></div>
-      <div><small>xG total</small><strong>2.11</strong></div>
-      <div><small>Señal</small><strong>Partido abierto: Latvia (37.0%)</strong></div></div>
-      <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>37.0%</td><td>2.71</td></tr><tr><td>Empate</td><td>29.9%</td><td>3.35</td></tr><tr><td>Visitante</td><td>33.2%</td><td>3.01</td></tr><tr><td>1X</td><td>66.8%</td><td>1.50</td></tr><tr><td>X2</td><td>63.0%</td><td>1.59</td></tr><tr><td>12</td><td>70.1%</td><td>1.43</td></tr></tbody></table>
-      </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>87.8%</td><td>1.14</td><td>12.2%</td><td>8.23</td></tr><tr><td>1.5</td><td>62.2%</td><td>1.61</td><td>37.8%</td><td>2.65</td></tr><tr><td>2.5</td><td>35.2%</td><td>2.84</td><td>64.8%</td><td>1.54</td></tr><tr><td>3.5</td><td>16.3%</td><td>6.15</td><td>83.7%</td><td>1.19</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 41.8% &nbsp; <strong>BTTS no:</strong> 58.2%</p>
-      </div></div>
-      <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-1</td><td>13.5%</td><td>7.42</td></tr><tr><td>1-0</td><td>13.3%</td><td>7.54</td></tr><tr><td>0-1</td><td>12.4%</td><td>8.09</td></tr><tr><td>0-0</td><td>12.2%</td><td>8.23</td></tr><tr><td>2-1</td><td>7.3%</td><td>13.61</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>12.2%</td><td>12.4%</td><td>6.3%</td><td>2.1%</td><td>0.5%</td></tr><tr><th>1 G</th><td>13.3%</td><td>13.5%</td><td>6.9%</td><td>2.3%</td><td>0.6%</td></tr><tr><th>2 G</th><td>7.2%</td><td>7.3%</td><td>3.7%</td><td>1.3%</td><td>0.3%</td></tr><tr><th>3 G</th><td>2.6%</td><td>2.7%</td><td>1.4%</td><td>0.5%</td><td>0.1%</td></tr><tr><th>4 G</th><td>0.7%</td><td>0.7%</td><td>0.4%</td><td>0.1%</td><td>0.0%</td></tr></tbody></table></div></div>
-    </section>
-    <section class="match" data-match="Gibraltar vs Andorra" data-date="2026-09-27">
-      <h2>Gibraltar <span>vs</span> Andorra <span class="match-date-badge">📅 2026-09-27 · 11:00:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>0.92</strong></div>
-      <div><small>xG visitante</small><strong>0.73</strong></div>
-      <div><small>xG total</small><strong>1.64</strong></div>
-      <div><small>Señal</small><strong>Partido abierto: Gibraltar (38.1%)</strong></div></div>
-      <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>38.1%</td><td>2.63</td></tr><tr><td>Empate</td><td>34.5%</td><td>2.90</td></tr><tr><td>Visitante</td><td>27.4%</td><td>3.65</td></tr><tr><td>1X</td><td>72.6%</td><td>1.38</td></tr><tr><td>X2</td><td>61.9%</td><td>1.61</td></tr><tr><td>12</td><td>65.5%</td><td>1.53</td></tr></tbody></table>
-      </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>80.7%</td><td>1.24</td><td>19.3%</td><td>5.18</td></tr><tr><td>1.5</td><td>48.9%</td><td>2.04</td><td>51.1%</td><td>1.96</td></tr><tr><td>2.5</td><td>22.8%</td><td>4.38</td><td>77.2%</td><td>1.30</td></tr><tr><td>3.5</td><td>8.5%</td><td>11.76</td><td>91.5%</td><td>1.09</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 30.8% &nbsp; <strong>BTTS no:</strong> 69.2%</p>
-      </div></div>
-      <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>0-0</td><td>19.3%</td><td>5.18</td></tr><tr><td>1-0</td><td>17.7%</td><td>5.65</td></tr><tr><td>0-1</td><td>14.1%</td><td>7.11</td></tr><tr><td>1-1</td><td>12.9%</td><td>7.76</td></tr><tr><td>2-0</td><td>8.1%</td><td>12.33</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>19.3%</td><td>14.1%</td><td>5.1%</td><td>1.2%</td><td>0.2%</td></tr><tr><th>1 G</th><td>17.7%</td><td>12.9%</td><td>4.7%</td><td>1.1%</td><td>0.2%</td></tr><tr><th>2 G</th><td>8.1%</td><td>5.9%</td><td>2.1%</td><td>0.5%</td><td>0.1%</td></tr><tr><th>3 G</th><td>2.5%</td><td>1.8%</td><td>0.7%</td><td>0.2%</td><td>0.0%</td></tr><tr><th>4 G</th><td>0.6%</td><td>0.4%</td><td>0.2%</td><td>0.0%</td><td>0.0%</td></tr></tbody></table></div></div>
-    </section>
-    <section class="match" data-match="Pumas UNAM vs Atlético San Luis" data-date="2026-09-27">
-      <h2>Pumas UNAM <span>vs</span> Atlético San Luis <span class="match-date-badge">📅 2026-09-27 · 13:00:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>2.58</strong></div>
-      <div><small>xG visitante</small><strong>0.96</strong></div>
-      <div><small>xG total</small><strong>3.54</strong></div>
-      <div><small>Señal</small><strong>Ventaja clara: Pumas UNAM (72.1%)</strong></div></div>
-      <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>72.1%</td><td>1.39</td></tr><tr><td>Empate</td><td>16.0%</td><td>6.24</td></tr><tr><td>Visitante</td><td>11.9%</td><td>8.41</td></tr><tr><td>1X</td><td>88.1%</td><td>1.13</td></tr><tr><td>X2</td><td>27.9%</td><td>3.58</td></tr><tr><td>12</td><td>84.0%</td><td>1.19</td></tr></tbody></table>
-      </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>97.1%</td><td>1.03</td><td>2.9%</td><td>34.51</td></tr><tr><td>1.5</td><td>86.8%</td><td>1.15</td><td>13.2%</td><td>7.60</td></tr><tr><td>2.5</td><td>68.7%</td><td>1.46</td><td>31.3%</td><td>3.19</td></tr><tr><td>3.5</td><td>47.2%</td><td>2.12</td><td>52.8%</td><td>1.89</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 49.5% &nbsp; <strong>BTTS no:</strong> 50.5%</p>
-      </div></div>
-      <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>2-0</td><td>9.6%</td><td>10.39</td></tr><tr><td>2-1</td><td>9.3%</td><td>10.78</td></tr><tr><td>3-0</td><td>8.3%</td><td>12.10</td></tr><tr><td>3-1</td><td>8.0%</td><td>12.55</td></tr><tr><td>1-0</td><td>7.5%</td><td>13.39</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>2.9%</td><td>2.8%</td><td>1.3%</td><td>0.4%</td><td>0.1%</td></tr><tr><th>1 G</th><td>7.5%</td><td>7.2%</td><td>3.5%</td><td>1.1%</td><td>0.3%</td></tr><tr><th>2 G</th><td>9.6%</td><td>9.3%</td><td>4.5%</td><td>1.4%</td><td>0.3%</td></tr><tr><th>3 G</th><td>8.3%</td><td>8.0%</td><td>3.8%</td><td>1.2%</td><td>0.3%</td></tr><tr><th>4 G</th><td>5.3%</td><td>5.1%</td><td>2.5%</td><td>0.8%</td><td>0.2%</td></tr></tbody></table></div></div>
-    </section>
-    <section class="match" data-match="Club León vs FC Juárez" data-date="2026-09-27">
-      <h2>Club León <span>vs</span> FC Juárez <span class="match-date-badge">📅 2026-09-27 · 20:00:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>2.38</strong></div>
-      <div><small>xG visitante</small><strong>1.11</strong></div>
-      <div><small>xG total</small><strong>3.48</strong></div>
-      <div><small>Señal</small><strong>Ventaja clara: Club León (65.5%)</strong></div></div>
-      <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>65.5%</td><td>1.53</td></tr><tr><td>Empate</td><td>18.3%</td><td>5.46</td></tr><tr><td>Visitante</td><td>16.2%</td><td>6.17</td></tr><tr><td>1X</td><td>83.8%</td><td>1.19</td></tr><tr><td>X2</td><td>34.5%</td><td>2.90</td></tr><tr><td>12</td><td>81.7%</td><td>1.22</td></tr></tbody></table>
-      </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>96.9%</td><td>1.03</td><td>3.1%</td><td>32.60</td></tr><tr><td>1.5</td><td>86.2%</td><td>1.16</td><td>13.8%</td><td>7.27</td></tr><tr><td>2.5</td><td>67.6%</td><td>1.48</td><td>32.4%</td><td>3.09</td></tr><tr><td>3.5</td><td>46.0%</td><td>2.17</td><td>54.0%</td><td>1.85</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 54.1% &nbsp; <strong>BTTS no:</strong> 45.9%</p>
-      </div></div>
-      <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>2-1</td><td>9.6%</td><td>10.42</td></tr><tr><td>2-0</td><td>8.7%</td><td>11.55</td></tr><tr><td>1-1</td><td>8.1%</td><td>12.38</td></tr><tr><td>3-1</td><td>7.6%</td><td>13.16</td></tr><tr><td>1-0</td><td>7.3%</td><td>13.72</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>3.1%</td><td>3.4%</td><td>1.9%</td><td>0.7%</td><td>0.2%</td></tr><tr><th>1 G</th><td>7.3%</td><td>8.1%</td><td>4.5%</td><td>1.7%</td><td>0.5%</td></tr><tr><th>2 G</th><td>8.7%</td><td>9.6%</td><td>5.3%</td><td>2.0%</td><td>0.5%</td></tr><tr><th>3 G</th><td>6.9%</td><td>7.6%</td><td>4.2%</td><td>1.6%</td><td>0.4%</td></tr><tr><th>4 G</th><td>4.1%</td><td>4.5%</td><td>2.5%</td><td>0.9%</td><td>0.3%</td></tr></tbody></table></div></div>
-    </section>
-    <section class="match" data-match="Club Necaxa vs Club América" data-date="2026-09-27">
-      <h2>Club Necaxa <span>vs</span> Club América <span class="match-date-badge">📅 2026-09-27 · 22:10:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>1.24</strong></div>
-      <div><small>xG visitante</small><strong>1.34</strong></div>
-      <div><small>xG total</small><strong>2.58</strong></div>
-      <div><small>Señal</small><strong>Partido abierto: Club América (39.2%)</strong></div></div>
-      <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>34.3%</td><td>2.91</td></tr><tr><td>Empate</td><td>26.5%</td><td>3.78</td></tr><tr><td>Visitante</td><td>39.2%</td><td>2.55</td></tr><tr><td>1X</td><td>60.8%</td><td>1.64</td></tr><tr><td>X2</td><td>65.7%</td><td>1.52</td></tr><tr><td>12</td><td>73.5%</td><td>1.36</td></tr></tbody></table>
-      </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>92.4%</td><td>1.08</td><td>7.6%</td><td>13.17</td></tr><tr><td>1.5</td><td>72.8%</td><td>1.37</td><td>27.2%</td><td>3.68</td></tr><tr><td>2.5</td><td>47.6%</td><td>2.10</td><td>52.4%</td><td>1.91</td></tr><tr><td>3.5</td><td>25.9%</td><td>3.86</td><td>74.1%</td><td>1.35</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 50.9% &nbsp; <strong>BTTS no:</strong> 49.1%</p>
-      </div></div>
-      <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-1</td><td>12.6%</td><td>7.94</td></tr><tr><td>0-1</td><td>10.2%</td><td>9.82</td></tr><tr><td>1-0</td><td>9.4%</td><td>10.64</td></tr><tr><td>1-2</td><td>8.4%</td><td>11.85</td></tr><tr><td>2-1</td><td>7.8%</td><td>12.83</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>7.6%</td><td>10.2%</td><td>6.8%</td><td>3.0%</td><td>1.0%</td></tr><tr><th>1 G</th><td>9.4%</td><td>12.6%</td><td>8.4%</td><td>3.8%</td><td>1.3%</td></tr><tr><th>2 G</th><td>5.8%</td><td>7.8%</td><td>5.2%</td><td>2.3%</td><td>0.8%</td></tr><tr><th>3 G</th><td>2.4%</td><td>3.2%</td><td>2.2%</td><td>1.0%</td><td>0.3%</td></tr><tr><th>4 G</th><td>0.7%</td><td>1.0%</td><td>0.7%</td><td>0.3%</td><td>0.1%</td></tr></tbody></table></div></div>
-    </section>
-    <section class="match" data-match="Columbus Crew vs Inter Miami CF" data-date="2026-09-27">
-      <h2>Columbus Crew <span>vs</span> Inter Miami CF <span class="match-date-badge">📅 2026-09-27 · 18:00:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>2.24</strong></div>
-      <div><small>xG visitante</small><strong>1.81</strong></div>
-      <div><small>xG total</small><strong>4.05</strong></div>
-      <div><small>Señal</small><strong>Ventaja moderada: Columbus Crew (48.1%)</strong></div></div>
-      <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>48.1%</td><td>2.08</td></tr><tr><td>Empate</td><td>20.2%</td><td>4.96</td></tr><tr><td>Visitante</td><td>31.7%</td><td>3.15</td></tr><tr><td>1X</td><td>68.3%</td><td>1.46</td></tr><tr><td>X2</td><td>51.9%</td><td>1.93</td></tr><tr><td>12</td><td>79.8%</td><td>1.25</td></tr></tbody></table>
-      </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>98.3%</td><td>1.02</td><td>1.7%</td><td>57.36</td></tr><tr><td>1.5</td><td>91.2%</td><td>1.10</td><td>8.8%</td><td>11.36</td></tr><tr><td>2.5</td><td>76.9%</td><td>1.30</td><td>23.1%</td><td>4.33</td></tr><tr><td>3.5</td><td>57.6%</td><td>1.74</td><td>42.4%</td><td>2.36</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 65.3% &nbsp; <strong>BTTS no:</strong> 34.7%</p>
-      </div></div>
-      <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>2-1</td><td>7.9%</td><td>12.63</td></tr><tr><td>2-2</td><td>7.2%</td><td>13.97</td></tr><tr><td>1-1</td><td>7.1%</td><td>14.15</td></tr><tr><td>1-2</td><td>6.4%</td><td>15.65</td></tr><tr><td>3-1</td><td>5.9%</td><td>16.92</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>1.7%</td><td>3.2%</td><td>2.9%</td><td>1.7%</td><td>0.8%</td></tr><tr><th>1 G</th><td>3.9%</td><td>7.1%</td><td>6.4%</td><td>3.9%</td><td>1.7%</td></tr><tr><th>2 G</th><td>4.4%</td><td>7.9%</td><td>7.2%</td><td>4.3%</td><td>2.0%</td></tr><tr><th>3 G</th><td>3.3%</td><td>5.9%</td><td>5.3%</td><td>3.2%</td><td>1.5%</td></tr><tr><th>4 G</th><td>1.8%</td><td>3.3%</td><td>3.0%</td><td>1.8%</td><td>0.8%</td></tr></tbody></table></div></div>
-    </section>
-    <section class="match" data-match="Real Valladolid vs Córdoba" data-date="2026-09-27">
-      <h2>Real Valladolid <span>vs</span> Córdoba <span class="match-date-badge">📅 2026-09-27 · 07:00:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>1.33</strong></div>
-      <div><small>xG visitante</small><strong>1.54</strong></div>
-      <div><small>xG total</small><strong>2.86</strong></div>
-      <div><small>Señal</small><strong>Partido abierto: Córdoba (42.2%)</strong></div></div>
-      <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>32.9%</td><td>3.03</td></tr><tr><td>Empate</td><td>24.8%</td><td>4.03</td></tr><tr><td>Visitante</td><td>42.2%</td><td>2.37</td></tr><tr><td>1X</td><td>57.8%</td><td>1.73</td></tr><tr><td>X2</td><td>67.1%</td><td>1.49</td></tr><tr><td>12</td><td>75.2%</td><td>1.33</td></tr></tbody></table>
-      </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>94.3%</td><td>1.06</td><td>5.7%</td><td>17.53</td></tr><tr><td>1.5</td><td>78.0%</td><td>1.28</td><td>22.0%</td><td>4.54</td></tr><tr><td>2.5</td><td>54.6%</td><td>1.83</td><td>45.4%</td><td>2.20</td></tr><tr><td>3.5</td><td>32.2%</td><td>3.10</td><td>67.8%</td><td>1.48</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 55.3% &nbsp; <strong>BTTS no:</strong> 44.7%</p>
-      </div></div>
-      <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-1</td><td>11.6%</td><td>8.59</td></tr><tr><td>1-2</td><td>8.9%</td><td>11.19</td></tr><tr><td>0-1</td><td>8.8%</td><td>11.42</td></tr><tr><td>2-1</td><td>7.7%</td><td>12.94</td></tr><tr><td>1-0</td><td>7.6%</td><td>13.20</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>5.7%</td><td>8.8%</td><td>6.7%</td><td>3.4%</td><td>1.3%</td></tr><tr><th>1 G</th><td>7.6%</td><td>11.6%</td><td>8.9%</td><td>4.6%</td><td>1.8%</td></tr><tr><th>2 G</th><td>5.0%</td><td>7.7%</td><td>5.9%</td><td>3.0%</td><td>1.2%</td></tr><tr><th>3 G</th><td>2.2%</td><td>3.4%</td><td>2.6%</td><td>1.3%</td><td>0.5%</td></tr><tr><th>4 G</th><td>0.7%</td><td>1.1%</td><td>0.9%</td><td>0.4%</td><td>0.2%</td></tr></tbody></table></div></div>
-    </section>
-    <section class="match" data-match="Mallorca vs Almería" data-date="2026-09-27">
-      <h2>Mallorca <span>vs</span> Almería <span class="match-date-badge">📅 2026-09-27 · 09:15:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>1.42</strong></div>
-      <div><small>xG visitante</small><strong>1.19</strong></div>
-      <div><small>xG total</small><strong>2.61</strong></div>
-      <div><small>Señal</small><strong>Partido abierto: Mallorca (42.3%)</strong></div></div>
-      <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>42.3%</td><td>2.36</td></tr><tr><td>Empate</td><td>26.1%</td><td>3.83</td></tr><tr><td>Visitante</td><td>31.5%</td><td>3.17</td></tr><tr><td>1X</td><td>68.5%</td><td>1.46</td></tr><tr><td>X2</td><td>57.7%</td><td>1.73</td></tr><tr><td>12</td><td>73.9%</td><td>1.35</td></tr></tbody></table>
-      </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>92.7%</td><td>1.08</td><td>7.3%</td><td>13.61</td></tr><tr><td>1.5</td><td>73.5%</td><td>1.36</td><td>26.5%</td><td>3.77</td></tr><tr><td>2.5</td><td>48.4%</td><td>2.06</td><td>51.6%</td><td>1.94</td></tr><tr><td>3.5</td><td>26.6%</td><td>3.75</td><td>73.4%</td><td>1.36</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 51.2% &nbsp; <strong>BTTS no:</strong> 48.8%</p>
-      </div></div>
-      <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-1</td><td>12.4%</td><td>8.05</td></tr><tr><td>1-0</td><td>10.4%</td><td>9.58</td></tr><tr><td>2-1</td><td>8.8%</td><td>11.33</td></tr><tr><td>0-1</td><td>8.7%</td><td>11.44</td></tr><tr><td>2-0</td><td>7.4%</td><td>13.48</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>7.3%</td><td>8.7%</td><td>5.2%</td><td>2.1%</td><td>0.6%</td></tr><tr><th>1 G</th><td>10.4%</td><td>12.4%</td><td>7.4%</td><td>2.9%</td><td>0.9%</td></tr><tr><th>2 G</th><td>7.4%</td><td>8.8%</td><td>5.3%</td><td>2.1%</td><td>0.6%</td></tr><tr><th>3 G</th><td>3.5%</td><td>4.2%</td><td>2.5%</td><td>1.0%</td><td>0.3%</td></tr><tr><th>4 G</th><td>1.2%</td><td>1.5%</td><td>0.9%</td><td>0.4%</td><td>0.1%</td></tr></tbody></table></div></div>
-    </section>
-    <section class="match" data-match="Burgos Club de Fútbol vs CD Eldense" data-date="2026-09-27">
-      <h2>Burgos Club de Fútbol <span>vs</span> CD Eldense <span class="match-date-badge">📅 2026-09-27 · 11:30:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>1.11</strong></div>
-      <div><small>xG visitante</small><strong>0.72</strong></div>
-      <div><small>xG total</small><strong>1.83</strong></div>
-      <div><small>Señal</small><strong>Partido abierto: Burgos Club de Fútbol (44.6%)</strong></div></div>
-      <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>44.6%</td><td>2.24</td></tr><tr><td>Empate</td><td>31.7%</td><td>3.16</td></tr><tr><td>Visitante</td><td>23.8%</td><td>4.21</td></tr><tr><td>1X</td><td>76.2%</td><td>1.31</td></tr><tr><td>X2</td><td>55.4%</td><td>1.80</td></tr><tr><td>12</td><td>68.3%</td><td>1.46</td></tr></tbody></table>
-      </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>84.0%</td><td>1.19</td><td>16.0%</td><td>6.25</td></tr><tr><td>1.5</td><td>54.7%</td><td>1.83</td><td>45.3%</td><td>2.21</td></tr><tr><td>2.5</td><td>27.8%</td><td>3.60</td><td>72.2%</td><td>1.39</td></tr><tr><td>3.5</td><td>11.4%</td><td>8.77</td><td>88.6%</td><td>1.13</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 34.1% &nbsp; <strong>BTTS no:</strong> 65.9%</p>
-      </div></div>
-      <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-0</td><td>17.8%</td><td>5.63</td></tr><tr><td>0-0</td><td>16.0%</td><td>6.25</td></tr><tr><td>1-1</td><td>12.8%</td><td>7.79</td></tr><tr><td>0-1</td><td>11.6%</td><td>8.65</td></tr><tr><td>2-0</td><td>9.9%</td><td>10.15</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>16.0%</td><td>11.6%</td><td>4.2%</td><td>1.0%</td><td>0.2%</td></tr><tr><th>1 G</th><td>17.8%</td><td>12.8%</td><td>4.6%</td><td>1.1%</td><td>0.2%</td></tr><tr><th>2 G</th><td>9.9%</td><td>7.1%</td><td>2.6%</td><td>0.6%</td><td>0.1%</td></tr><tr><th>3 G</th><td>3.6%</td><td>2.6%</td><td>1.0%</td><td>0.2%</td><td>0.0%</td></tr><tr><th>4 G</th><td>1.0%</td><td>0.7%</td><td>0.3%</td><td>0.1%</td><td>0.0%</td></tr></tbody></table></div></div>
-    </section>
-    <section class="match" data-match="Eibar vs UD Las Palmas" data-date="2026-09-27">
-      <h2>Eibar <span>vs</span> UD Las Palmas <span class="match-date-badge">📅 2026-09-27 · 11:30:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>1.48</strong></div>
-      <div><small>xG visitante</small><strong>0.60</strong></div>
-      <div><small>xG total</small><strong>2.08</strong></div>
-      <div><small>Señal</small><strong>Ventaja moderada: Eibar (58.7%)</strong></div></div>
-      <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>58.7%</td><td>1.70</td></tr><tr><td>Empate</td><td>26.3%</td><td>3.80</td></tr><tr><td>Visitante</td><td>15.0%</td><td>6.65</td></tr><tr><td>1X</td><td>85.0%</td><td>1.18</td></tr><tr><td>X2</td><td>41.3%</td><td>2.42</td></tr><tr><td>12</td><td>73.7%</td><td>1.36</td></tr></tbody></table>
-      </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>87.6%</td><td>1.14</td><td>12.4%</td><td>8.03</td></tr><tr><td>1.5</td><td>61.6%</td><td>1.62</td><td>38.4%</td><td>2.61</td></tr><tr><td>2.5</td><td>34.6%</td><td>2.89</td><td>65.4%</td><td>1.53</td></tr><tr><td>3.5</td><td>15.8%</td><td>6.32</td><td>84.2%</td><td>1.19</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 34.1% &nbsp; <strong>BTTS no:</strong> 65.9%</p>
-      </div></div>
-      <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-0</td><td>18.4%</td><td>5.42</td></tr><tr><td>2-0</td><td>13.7%</td><td>7.32</td></tr><tr><td>0-0</td><td>12.4%</td><td>8.03</td></tr><tr><td>1-1</td><td>11.1%</td><td>9.00</td></tr><tr><td>2-1</td><td>8.2%</td><td>12.16</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>12.4%</td><td>7.5%</td><td>2.3%</td><td>0.5%</td><td>0.1%</td></tr><tr><th>1 G</th><td>18.4%</td><td>11.1%</td><td>3.3%</td><td>0.7%</td><td>0.1%</td></tr><tr><th>2 G</th><td>13.7%</td><td>8.2%</td><td>2.5%</td><td>0.5%</td><td>0.1%</td></tr><tr><th>3 G</th><td>6.7%</td><td>4.1%</td><td>1.2%</td><td>0.2%</td><td>0.0%</td></tr><tr><th>4 G</th><td>2.5%</td><td>1.5%</td><td>0.5%</td><td>0.1%</td><td>0.0%</td></tr></tbody></table></div></div>
-    </section>
-    <section class="match" data-match="Real Oviedo vs Sporting Gijón" data-date="2026-09-27">
-      <h2>Real Oviedo <span>vs</span> Sporting Gijón <span class="match-date-badge">📅 2026-09-27 · 14:00:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>0.91</strong></div>
-      <div><small>xG visitante</small><strong>1.15</strong></div>
-      <div><small>xG total</small><strong>2.06</strong></div>
-      <div><small>Señal</small><strong>Partido abierto: Sporting Gijón (41.2%)</strong></div></div>
-      <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>28.8%</td><td>3.47</td></tr><tr><td>Empate</td><td>30.0%</td><td>3.33</td></tr><tr><td>Visitante</td><td>41.2%</td><td>2.43</td></tr><tr><td>1X</td><td>58.8%</td><td>1.70</td></tr><tr><td>X2</td><td>71.2%</td><td>1.40</td></tr><tr><td>12</td><td>70.0%</td><td>1.43</td></tr></tbody></table>
-      </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>87.2%</td><td>1.15</td><td>12.8%</td><td>7.83</td></tr><tr><td>1.5</td><td>61.0%</td><td>1.64</td><td>39.0%</td><td>2.56</td></tr><tr><td>2.5</td><td>33.9%</td><td>2.95</td><td>66.1%</td><td>1.51</td></tr><tr><td>3.5</td><td>15.4%</td><td>6.51</td><td>84.6%</td><td>1.18</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 40.2% &nbsp; <strong>BTTS no:</strong> 59.8%</p>
-      </div></div>
-      <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>0-1</td><td>14.7%</td><td>6.81</td></tr><tr><td>1-1</td><td>13.3%</td><td>7.50</td></tr><tr><td>0-0</td><td>12.8%</td><td>7.83</td></tr><tr><td>1-0</td><td>11.6%</td><td>8.62</td></tr><tr><td>0-2</td><td>8.4%</td><td>11.86</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>12.8%</td><td>14.7%</td><td>8.4%</td><td>3.2%</td><td>0.9%</td></tr><tr><th>1 G</th><td>11.6%</td><td>13.3%</td><td>7.7%</td><td>2.9%</td><td>0.8%</td></tr><tr><th>2 G</th><td>5.3%</td><td>6.1%</td><td>3.5%</td><td>1.3%</td><td>0.4%</td></tr><tr><th>3 G</th><td>1.6%</td><td>1.8%</td><td>1.1%</td><td>0.4%</td><td>0.1%</td></tr><tr><th>4 G</th><td>0.4%</td><td>0.4%</td><td>0.2%</td><td>0.1%</td><td>0.0%</td></tr></tbody></table></div></div>
-    </section>
-    <section class="match" data-match="Leganés vs CD Castellón" data-date="2026-09-28">
-      <h2>Leganés <span>vs</span> CD Castellón <span class="match-date-badge">📅 2026-09-28 · 13:30:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>1.04</strong></div>
-      <div><small>xG visitante</small><strong>1.28</strong></div>
-      <div><small>xG total</small><strong>2.32</strong></div>
-      <div><small>Señal</small><strong>Partido abierto: CD Castellón (41.9%)</strong></div></div>
-      <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>30.1%</td><td>3.32</td></tr><tr><td>Empate</td><td>27.9%</td><td>3.58</td></tr><tr><td>Visitante</td><td>41.9%</td><td>2.39</td></tr><tr><td>1X</td><td>58.1%</td><td>1.72</td></tr><tr><td>X2</td><td>69.9%</td><td>1.43</td></tr><tr><td>12</td><td>72.1%</td><td>1.39</td></tr></tbody></table>
-      </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>90.2%</td><td>1.11</td><td>9.8%</td><td>10.23</td></tr><tr><td>1.5</td><td>67.5%</td><td>1.48</td><td>32.5%</td><td>3.08</td></tr><tr><td>2.5</td><td>41.1%</td><td>2.44</td><td>58.9%</td><td>1.70</td></tr><tr><td>3.5</td><td>20.6%</td><td>4.86</td><td>79.4%</td><td>1.26</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 45.8% &nbsp; <strong>BTTS no:</strong> 54.2%</p>
-      </div></div>
-      <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-1</td><td>13.1%</td><td>7.65</td></tr><tr><td>0-1</td><td>12.5%</td><td>7.97</td></tr><tr><td>1-0</td><td>10.2%</td><td>9.81</td></tr><tr><td>0-0</td><td>9.8%</td><td>10.23</td></tr><tr><td>1-2</td><td>8.4%</td><td>11.93</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>9.8%</td><td>12.5%</td><td>8.0%</td><td>3.4%</td><td>1.1%</td></tr><tr><th>1 G</th><td>10.2%</td><td>13.1%</td><td>8.4%</td><td>3.6%</td><td>1.1%</td></tr><tr><th>2 G</th><td>5.3%</td><td>6.8%</td><td>4.4%</td><td>1.9%</td><td>0.6%</td></tr><tr><th>3 G</th><td>1.8%</td><td>2.4%</td><td>1.5%</td><td>0.6%</td><td>0.2%</td></tr><tr><th>4 G</th><td>0.5%</td><td>0.6%</td><td>0.4%</td><td>0.2%</td><td>0.1%</td></tr></tbody></table></div></div>
-    </section>
-    <section class="match" data-match="Criciúma vs Avaí" data-date="2026-09-27">
-      <h2>Criciúma <span>vs</span> Avaí <span class="match-date-badge">📅 2026-09-27 · 09:00:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>1.24</strong></div>
-      <div><small>xG visitante</small><strong>0.81</strong></div>
-      <div><small>xG total</small><strong>2.05</strong></div>
-      <div><small>Señal</small><strong>Ventaja moderada: Criciúma (46.4%)</strong></div></div>
-      <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>46.4%</td><td>2.16</td></tr><tr><td>Empate</td><td>29.4%</td><td>3.40</td></tr><tr><td>Visitante</td><td>24.2%</td><td>4.13</td></tr><tr><td>1X</td><td>75.8%</td><td>1.32</td></tr><tr><td>X2</td><td>53.6%</td><td>1.86</td></tr><tr><td>12</td><td>70.6%</td><td>1.42</td></tr></tbody></table>
-      </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>87.2%</td><td>1.15</td><td>12.8%</td><td>7.79</td></tr><tr><td>1.5</td><td>60.8%</td><td>1.64</td><td>39.2%</td><td>2.55</td></tr><tr><td>2.5</td><td>33.8%</td><td>2.96</td><td>66.2%</td><td>1.51</td></tr><tr><td>3.5</td><td>15.3%</td><td>6.56</td><td>84.7%</td><td>1.18</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 38.9% &nbsp; <strong>BTTS no:</strong> 61.1%</p>
-      </div></div>
-      <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-0</td><td>15.9%</td><td>6.27</td></tr><tr><td>1-1</td><td>12.9%</td><td>7.74</td></tr><tr><td>0-0</td><td>12.8%</td><td>7.79</td></tr><tr><td>0-1</td><td>10.4%</td><td>9.61</td></tr><tr><td>2-0</td><td>9.9%</td><td>10.10</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>12.8%</td><td>10.4%</td><td>4.2%</td><td>1.1%</td><td>0.2%</td></tr><tr><th>1 G</th><td>15.9%</td><td>12.9%</td><td>5.2%</td><td>1.4%</td><td>0.3%</td></tr><tr><th>2 G</th><td>9.9%</td><td>8.0%</td><td>3.3%</td><td>0.9%</td><td>0.2%</td></tr><tr><th>3 G</th><td>4.1%</td><td>3.3%</td><td>1.3%</td><td>0.4%</td><td>0.1%</td></tr><tr><th>4 G</th><td>1.3%</td><td>1.0%</td><td>0.4%</td><td>0.1%</td><td>0.0%</td></tr></tbody></table></div></div>
-    </section>
-    <section class="match" data-match="Fortaleza vs Athletic Club" data-date="2026-09-27">
-      <h2>Fortaleza <span>vs</span> Athletic Club <span class="match-date-badge">📅 2026-09-27 · 16:30:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>1.17</strong></div>
-      <div><small>xG visitante</small><strong>0.84</strong></div>
-      <div><small>xG total</small><strong>2.01</strong></div>
-      <div><small>Señal</small><strong>Partido abierto: Fortaleza (43.5%)</strong></div></div>
-      <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>43.5%</td><td>2.30</td></tr><tr><td>Empate</td><td>30.2%</td><td>3.31</td></tr><tr><td>Visitante</td><td>26.4%</td><td>3.79</td></tr><tr><td>1X</td><td>73.6%</td><td>1.36</td></tr><tr><td>X2</td><td>56.5%</td><td>1.77</td></tr><tr><td>12</td><td>69.8%</td><td>1.43</td></tr></tbody></table>
-      </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>86.6%</td><td>1.15</td><td>13.4%</td><td>7.46</td></tr><tr><td>1.5</td><td>59.7%</td><td>1.68</td><td>40.3%</td><td>2.48</td></tr><tr><td>2.5</td><td>32.6%</td><td>3.07</td><td>67.4%</td><td>1.48</td></tr><tr><td>3.5</td><td>14.5%</td><td>6.91</td><td>85.5%</td><td>1.17</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 38.7% &nbsp; <strong>BTTS no:</strong> 61.3%</p>
-      </div></div>
-      <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-0</td><td>15.7%</td><td>6.38</td></tr><tr><td>0-0</td><td>13.4%</td><td>7.46</td></tr><tr><td>1-1</td><td>13.2%</td><td>7.59</td></tr><tr><td>0-1</td><td>11.3%</td><td>8.88</td></tr><tr><td>2-0</td><td>9.2%</td><td>10.92</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>13.4%</td><td>11.3%</td><td>4.7%</td><td>1.3%</td><td>0.3%</td></tr><tr><th>1 G</th><td>15.7%</td><td>13.2%</td><td>5.5%</td><td>1.6%</td><td>0.3%</td></tr><tr><th>2 G</th><td>9.2%</td><td>7.7%</td><td>3.2%</td><td>0.9%</td><td>0.2%</td></tr><tr><th>3 G</th><td>3.6%</td><td>3.0%</td><td>1.3%</td><td>0.4%</td><td>0.1%</td></tr><tr><th>4 G</th><td>1.0%</td><td>0.9%</td><td>0.4%</td><td>0.1%</td><td>0.0%</td></tr></tbody></table></div></div>
-    </section>
-    <section class="match" data-match="América Mineiro vs Juventude" data-date="2026-09-28">
-      <h2>América Mineiro <span>vs</span> Juventude <span class="match-date-badge">📅 2026-09-28 · 17:30:00</span></h2>
-      <div class="metrics"><div><small>xG local</small><strong>0.76</strong></div>
-      <div><small>xG visitante</small><strong>1.19</strong></div>
-      <div><small>xG total</small><strong>1.95</strong></div>
-      <div><small>Señal</small><strong>Ventaja moderada: Juventude (46.0%)</strong></div></div>
-      <div class="columns"><div><h3>1X2 y doble oportunidad</h3>
-        <table><thead><tr><th>Mercado</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>Local</td><td>23.7%</td><td>4.23</td></tr><tr><td>Empate</td><td>30.4%</td><td>3.29</td></tr><tr><td>Visitante</td><td>46.0%</td><td>2.17</td></tr><tr><td>1X</td><td>54.0%</td><td>1.85</td></tr><tr><td>X2</td><td>76.3%</td><td>1.31</td></tr><tr><td>12</td><td>69.6%</td><td>1.44</td></tr></tbody></table>
-      </div><div><h3>Over/Under y BTTS</h3>
-        <table><thead><tr><th>Línea</th><th>Over</th><th>Cuota</th><th>Under</th><th>Cuota</th></tr></thead><tbody><tr><td>0.5</td><td>85.7%</td><td>1.17</td><td>14.3%</td><td>7.02</td></tr><tr><td>1.5</td><td>58.0%</td><td>1.72</td><td>42.0%</td><td>2.38</td></tr><tr><td>2.5</td><td>30.9%</td><td>3.23</td><td>69.1%</td><td>1.45</td></tr><tr><td>3.5</td><td>13.4%</td><td>7.48</td><td>86.6%</td><td>1.15</td></tr></tbody></table>
-        <p><strong>BTTS sí:</strong> 36.6% &nbsp; <strong>BTTS no:</strong> 63.4%</p>
-      </div></div>
-      <div class="columns"><div><h3>Marcadores más probables</h3>
-        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>0-1</td><td>16.9%</td><td>5.91</td></tr><tr><td>0-0</td><td>14.3%</td><td>7.02</td></tr><tr><td>1-1</td><td>12.9%</td><td>7.76</td></tr><tr><td>1-0</td><td>10.9%</td><td>9.21</td></tr><tr><td>0-2</td><td>10.0%</td><td>9.96</td></tr></tbody></table>
-      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>14.3%</td><td>16.9%</td><td>10.0%</td><td>4.0%</td><td>1.2%</td></tr><tr><th>1 G</th><td>10.9%</td><td>12.9%</td><td>7.6%</td><td>3.0%</td><td>0.9%</td></tr><tr><th>2 G</th><td>4.1%</td><td>4.9%</td><td>2.9%</td><td>1.2%</td><td>0.3%</td></tr><tr><th>3 G</th><td>1.0%</td><td>1.2%</td><td>0.7%</td><td>0.3%</td><td>0.1%</td></tr><tr><th>4 G</th><td>0.2%</td><td>0.2%</td><td>0.1%</td><td>0.1%</td><td>0.0%</td></tr></tbody></table></div></div>
+        <table><thead><tr><th>Marcador</th><th>Prob.</th><th>Cuota justa</th></tr></thead><tbody><tr><td>1-0</td><td>18.2%</td><td>5.49</td></tr><tr><td>2-0</td><td>15.3%</td><td>6.55</td></tr><tr><td>0-0</td><td>10.9%</td><td>9.21</td></tr><tr><td>1-1</td><td>9.9%</td><td>10.11</td></tr><tr><td>3-0</td><td>8.5%</td><td>11.71</td></tr></tbody></table>
+      </div><div><h3>Matriz Poisson</h3><table><thead><tr><th>Local \ Visitante</th><th>0 G</th><th>1 G</th><th>2 G</th><th>3 G</th><th>4 G</th></tr></thead><tbody><tr><th>0 G</th><td>10.9%</td><td>5.9%</td><td>1.6%</td><td>0.3%</td><td>0.0%</td></tr><tr><th>1 G</th><td>18.2%</td><td>9.9%</td><td>2.7%</td><td>0.5%</td><td>0.1%</td></tr><tr><th>2 G</th><td>15.3%</td><td>8.3%</td><td>2.3%</td><td>0.4%</td><td>0.1%</td></tr><tr><th>3 G</th><td>8.5%</td><td>4.6%</td><td>1.3%</td><td>0.2%</td><td>0.0%</td></tr><tr><th>4 G</th><td>3.6%</td><td>1.9%</td><td>0.5%</td><td>0.1%</td><td>0.0%</td></tr></tbody></table></div></div>
     </section></div>
     <div id="view-ratings" class="page-view">
       <section class="ratings-heading"><h2>📈 Ratings de Equipos</h2>
@@ -519,13 +145,13 @@
       <section class="ratings-gallery">
         <article class="rating-card">
           <div class="card-header"><h2 class="card-title">⚔️ Rating de Ataque</h2><span class="badge">Ofensiva</span></div>
-          <div class="img-wrapper"><a href="https://res.cloudinary.com/qwqpyzzs/image/upload/v1790477221/attacksRating_obel2k.png" target="_blank" rel="noopener"><img src="https://res.cloudinary.com/qwqpyzzs/image/upload/v1790477221/attacksRating_obel2k.png" alt="⚔️ Rating de Ataque" loading="lazy"></a></div>
-          <div class="card-footer"><p class="card-caption">Capacidad relativa de anotación de goles por equipo</p><a href="https://res.cloudinary.com/qwqpyzzs/image/upload/v1790477221/attacksRating_obel2k.png" target="_blank" rel="noopener">Abrir original ↗</a></div>
+          <div class="img-wrapper"><a href="https://res.cloudinary.com/qwqpyzzs/image/upload/v1790656203/attacksRating_obel2k.png" target="_blank" rel="noopener"><img src="https://res.cloudinary.com/qwqpyzzs/image/upload/v1790656203/attacksRating_obel2k.png" alt="⚔️ Rating de Ataque" loading="lazy"></a></div>
+          <div class="card-footer"><p class="card-caption">Capacidad relativa de anotación de goles por equipo</p><a href="https://res.cloudinary.com/qwqpyzzs/image/upload/v1790656203/attacksRating_obel2k.png" target="_blank" rel="noopener">Abrir original ↗</a></div>
         </article>
         <article class="rating-card">
           <div class="card-header"><h2 class="card-title">🛡️ Rating Defensivo</h2><span class="badge">Defensiva</span></div>
-          <div class="img-wrapper"><a href="https://res.cloudinary.com/qwqpyzzs/image/upload/v1790477231/defendRating_n4nved.png" target="_blank" rel="noopener"><img src="https://res.cloudinary.com/qwqpyzzs/image/upload/v1790477231/defendRating_n4nved.png" alt="🛡️ Rating Defensivo" loading="lazy"></a></div>
-          <div class="card-footer"><p class="card-caption">Capacidad relativa de contención y prevención de goles encajados</p><a href="https://res.cloudinary.com/qwqpyzzs/image/upload/v1790477231/defendRating_n4nved.png" target="_blank" rel="noopener">Abrir original ↗</a></div>
+          <div class="img-wrapper"><a href="https://res.cloudinary.com/qwqpyzzs/image/upload/v1790656210/defendRating_n4nved.png" target="_blank" rel="noopener"><img src="https://res.cloudinary.com/qwqpyzzs/image/upload/v1790656210/defendRating_n4nved.png" alt="🛡️ Rating Defensivo" loading="lazy"></a></div>
+          <div class="card-footer"><p class="card-caption">Capacidad relativa de contención y prevención de goles encajados</p><a href="https://res.cloudinary.com/qwqpyzzs/image/upload/v1790656210/defendRating_n4nved.png" target="_blank" rel="noopener">Abrir original ↗</a></div>
         </article></section>
     </div>
 <footer>Artefacto generado automáticamente a partir del JSON de resultados del notebook. El archivo predictions_summary.json incluido en esta carpeta es el insumo exacto utilizado para renderizar este informe.</footer></main>

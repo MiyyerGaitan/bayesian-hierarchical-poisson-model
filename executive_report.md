@@ -1,9 +1,9 @@
 # Informe ejecutivo de predicciones deportivas
 
-**Generado:** `2026-10-07T20:11:16.534010`  
-**Partidos analizados:** 43  
+**Generado:** `2026-10-25T19:09:40.924081`  
+**Partidos analizados:** 54  
 **Modelo:** Bayesian hierarchical Poisson  
-**RPS temporal fuera de muestra:** `0.2168`  
+**RPS temporal fuera de muestra:** `0.2257`  
 
 > Este documento presenta probabilidades modeladas y cuotas justas teóricas; no constituye una recomendación financiera ni garantiza resultados.
 
@@ -11,992 +11,1245 @@
 
 | Partido | Favorito | Probabilidad | xG total | Marcador modal | Señal |
 |---|---:|---:|---:|---:|---|
-| Arsenal vs Leeds United | Arsenal | 56.6% | 2.53 | 1-0 (13.3%) | Ventaja moderada: Arsenal (56.6%) |
-| Genoa vs Fiorentina | Genoa | 40.4% | 2.32 | 1-1 (13.1%) | Partido abierto: Genoa (40.4%) |
-| Málaga CF vs Espanyol | Málaga CF | 57.1% | 2.88 | 1-1 (10.7%) | Ventaja moderada: Málaga CF (57.1%) |
-| Rayo Vallecano vs Athletic Club | Rayo Vallecano | 54.1% | 2.65 | 1-0 (11.9%) | Ventaja moderada: Rayo Vallecano (54.1%) |
-| RC Lens vs Olympique Lyonnais | RC Lens | 59.3% | 3.32 | 2-1 (9.8%) | Ventaja moderada: RC Lens (59.3%) |
-| Borussia Dortmund vs SV Werder Bremen | Borussia Dortmund | 74.1% | 3.06 | 2-0 (13.0%) | Ventaja clara: Borussia Dortmund (74.1%) |
-| 1. FC Union Berlin vs SV 07 Elversberg | SV 07 Elversberg | 46.3% | 3.41 | 1-1 (9.5%) | Ventaja moderada: SV 07 Elversberg (46.3%) |
-| 1. FSV Mainz 05 vs Bayer 04 Leverkusen | 1. FSV Mainz 05 | 46.2% | 2.68 | 1-1 (12.0%) | Ventaja moderada: 1. FSV Mainz 05 (46.2%) |
-| FC Augsburg vs FC Bayern München | FC Bayern München | 68.3% | 4.00 | 1-2 (8.7%) | Ventaja clara: FC Bayern München (68.3%) |
-| SC Paderborn 07 vs VfB Stuttgart | VfB Stuttgart | 40.4% | 3.34 | 1-1 (9.9%) | Partido abierto: VfB Stuttgart (40.4%) |
-| TSG Hoffenheim vs Hamburger SV | TSG Hoffenheim | 66.1% | 3.19 | 2-0 (10.2%) | Ventaja clara: TSG Hoffenheim (66.1%) |
-| Santos vs Flamengo | Flamengo | 43.4% | 2.73 | 1-1 (12.0%) | Partido abierto: Flamengo (43.4%) |
-| Athletico vs Atlético Mineiro | Athletico | 43.7% | 2.60 | 1-1 (12.4%) | Partido abierto: Athletico (43.7%) |
-| Fluminense vs Coritiba | Fluminense | 52.1% | 2.92 | 1-1 (11.0%) | Ventaja moderada: Fluminense (52.1%) |
-| Palmeiras vs Bahia | Palmeiras | 61.1% | 2.84 | 1-0 (11.2%) | Ventaja clara: Palmeiras (61.1%) |
-| Moreirense vs Gil Vicente | Gil Vicente | 36.5% | 2.35 | 1-1 (13.2%) | Partido abierto: Gil Vicente (36.5%) |
-| Sporting Braga vs Sporting CP | Sporting CP | 38.8% | 2.84 | 1-1 (11.8%) | Partido abierto: Sporting CP (38.8%) |
-| Club Puebla vs Club León | Club León | 37.4% | 2.42 | 1-1 (13.0%) | Partido abierto: Club León (37.4%) |
-| Tigres UANL vs CD Toluca | CD Toluca | 37.4% | 2.46 | 1-1 (12.9%) | Partido abierto: CD Toluca (37.4%) |
-| West Ham United vs Queens Park Rangers | West Ham United | 59.5% | 2.74 | 1-0 (11.9%) | Ventaja moderada: West Ham United (59.5%) |
-| Charlton Athletic vs Bristol City | Charlton Athletic | 42.8% | 2.07 | 1-0 (15.0%) | Partido abierto: Charlton Athletic (42.8%) |
-| Swansea City vs Norwich City | Swansea City | 41.8% | 2.87 | 1-1 (11.6%) | Partido abierto: Swansea City (41.8%) |
-| West Bromwich Albion vs Birmingham City | West Bromwich Albion | 41.8% | 2.06 | 1-0 (14.8%) | Partido abierto: West Bromwich Albion (41.8%) |
-| Ceará vs Criciúma | Ceará | 39.7% | 2.02 | 1-0 (14.6%) | Partido abierto: Ceará (39.7%) |
-| Náutico vs Grêmio Novorizontino | Náutico | 38.3% | 2.55 | 1-1 (12.7%) | Partido abierto: Náutico (38.3%) |
-| Montpellier vs Grenoble Foot 38 | Montpellier | 50.8% | 2.05 | 1-0 (17.0%) | Ventaja moderada: Montpellier (50.8%) |
-| Nancy vs Guingamp | Nancy | 46.3% | 2.47 | 1-1 (12.5%) | Ventaja moderada: Nancy (46.3%) |
-| Pau FC vs Stade Lavallois | Pau FC | 53.1% | 2.78 | 1-1 (11.3%) | Ventaja moderada: Pau FC (53.1%) |
-| Sochaux vs US Boulogne Côte-d'Opale | Sochaux | 42.4% | 1.78 | 1-0 (17.7%) | Partido abierto: Sochaux (42.4%) |
-| USL Dunkerque vs Annecy FC | USL Dunkerque | 39.5% | 2.90 | 1-1 (11.6%) | Partido abierto: USL Dunkerque (39.5%) |
-| Clermont Foot vs Red Star FC | Clermont Foot | 39.8% | 2.32 | 1-1 (13.2%) | Partido abierto: Clermont Foot (39.8%) |
-| Nantes vs Stade de Reims | Stade de Reims | 48.9% | 2.48 | 0-1 (12.5%) | Ventaja moderada: Stade de Reims (48.9%) |
-| Wieczysta Kraków vs Wisła Płock | Wieczysta Kraków | 57.1% | 3.03 | 1-1 (10.2%) | Ventaja moderada: Wieczysta Kraków (57.1%) |
-| Raków Częstochowa vs GKS Katowice | GKS Katowice | 39.0% | 3.43 | 1-1 (9.5%) | Partido abierto: GKS Katowice (39.0%) |
-| KS Cracovia vs Zagłębie Lubin | KS Cracovia | 41.1% | 2.32 | 1-1 (13.1%) | Partido abierto: KS Cracovia (41.1%) |
-| Notts County vs Oxford United | Notts County | 55.1% | 2.54 | 1-0 (12.9%) | Ventaja moderada: Notts County (55.1%) |
-| Plymouth Argyle vs AFC Wimbledon | Plymouth Argyle | 76.5% | 3.53 | 2-0 (10.6%) | Ventaja clara: Plymouth Argyle (76.5%) |
-| Oldham Athletic vs Accrington Stanley | Oldham Athletic | 61.1% | 2.78 | 1-0 (11.8%) | Ventaja clara: Oldham Athletic (61.1%) |
-| Swindon Town vs Crewe Alexandra | Swindon Town | 36.9% | 2.64 | 1-1 (12.4%) | Partido abierto: Swindon Town (36.9%) |
-| Aldosivi vs Sarmiento | Aldosivi | 36.5% | 2.12 | 1-1 (13.5%) | Partido abierto: Aldosivi (36.5%) |
-| Gimnasia y Esgrima vs Atlético Tucumán | Gimnasia y Esgrima | 50.4% | 2.35 | 1-0 (13.9%) | Ventaja moderada: Gimnasia y Esgrima (50.4%) |
-| Instituto De Córdoba vs Boca Juniors | Boca Juniors | 38.2% | 2.24 | 1-1 (13.3%) | Partido abierto: Boca Juniors (38.2%) |
-| Club Atlético Unión de Santa Fe vs Defensa y Justicia | Club Atlético Unión de Santa Fe | 54.8% | 2.93 | 1-1 (10.7%) | Ventaja moderada: Club Atlético Unión de Santa Fe (54.8%) |
+| Crystal Palace vs Newcastle United | Crystal Palace | 45.9% | 3.19 | 1-1 (10.3%) | Ventaja moderada: Crystal Palace (45.9%) |
+| Hull City vs Brentford | Brentford | 41.5% | 2.37 | 1-1 (13.0%) | Partido abierto: Brentford (41.5%) |
+| Liverpool FC vs Brighton & Hove Albion | Liverpool FC | 50.6% | 2.84 | 1-1 (11.3%) | Ventaja moderada: Liverpool FC (50.6%) |
+| Manchester United vs Bournemouth | Manchester United | 49.0% | 3.07 | 1-1 (10.7%) | Ventaja moderada: Manchester United (49.0%) |
+| Sunderland vs Leeds United | Leeds United | 36.2% | 2.08 | 1-1 (13.5%) | Partido abierto: Leeds United (36.2%) |
+| Atalanta vs Frosinone | Frosinone | 40.3% | 2.83 | 1-1 (11.8%) | Partido abierto: Frosinone (40.3%) |
+| Genoa vs Venezia | Venezia | 43.1% | 2.62 | 1-1 (12.4%) | Partido abierto: Venezia (43.1%) |
+| Lecce vs Juventus | Juventus | 48.8% | 2.06 | 0-1 (16.4%) | Ventaja moderada: Juventus (48.8%) |
+| Udinese vs AC Milan | Udinese | 42.8% | 2.40 | 1-1 (12.9%) | Partido abierto: Udinese (42.8%) |
+| Athletic Club vs Getafe | Athletic Club | 39.6% | 1.82 | 1-0 (16.5%) | Partido abierto: Athletic Club (39.6%) |
+| Celta Vigo vs Real Betis | Celta Vigo | 39.5% | 2.57 | 1-1 (12.6%) | Partido abierto: Celta Vigo (39.5%) |
+| Real Sociedad vs Levante UD | Real Sociedad | 49.6% | 3.09 | 1-1 (10.6%) | Ventaja moderada: Real Sociedad (49.6%) |
+| FC Barcelona vs Real Madrid | FC Barcelona | 57.5% | 3.74 | 2-1 (9.1%) | Ventaja moderada: FC Barcelona (57.5%) |
+| Sevilla vs Osasuna | Sevilla | 43.2% | 2.58 | 1-1 (12.5%) | Partido abierto: Sevilla (43.2%) |
+| AS Monaco vs Lille | AS Monaco | 54.0% | 2.74 | 1-1 (11.3%) | Ventaja moderada: AS Monaco (54.0%) |
+| Angers vs Lorient | Lorient | 44.4% | 2.29 | 0-1 (13.3%) | Partido abierto: Lorient (44.4%) |
+| Auxerre vs Le Mans | Le Mans | 38.1% | 2.52 | 1-1 (12.8%) | Partido abierto: Le Mans (38.1%) |
+| Olympique de Marseille vs Le Havre | Olympique de Marseille | 55.9% | 2.36 | 1-0 (14.8%) | Ventaja moderada: Olympique de Marseille (55.9%) |
+| Stade Rennais vs RC Strasbourg | Stade Rennais | 45.0% | 3.47 | 1-1 (9.3%) | Ventaja moderada: Stade Rennais (45.0%) |
+| Toulouse vs Troyes | Toulouse | 40.4% | 2.68 | 1-1 (12.3%) | Partido abierto: Toulouse (40.4%) |
+| Paris Saint-Germain vs Olympique Lyonnais | Paris Saint-Germain | 66.5% | 3.36 | 2-1 (9.7%) | Ventaja clara: Paris Saint-Germain (66.5%) |
+| TSG Hoffenheim vs Bayer 04 Leverkusen | TSG Hoffenheim | 42.5% | 3.19 | 1-1 (10.4%) | Partido abierto: TSG Hoffenheim (42.5%) |
+| SC Freiburg vs FC Bayern München | FC Bayern München | 58.2% | 4.44 | 1-2 (7.5%) | Ventaja moderada: FC Bayern München (58.2%) |
+| Coritiba vs Grêmio | Coritiba | 37.0% | 2.29 | 1-1 (13.3%) | Partido abierto: Coritiba (37.0%) |
+| Flamengo vs Atlético Mineiro | Flamengo | 53.6% | 2.31 | 1-0 (14.9%) | Ventaja moderada: Flamengo (53.6%) |
+| Estoril Praia vs Moreirense | Estoril Praia | 48.6% | 2.51 | 1-1 (12.3%) | Ventaja moderada: Estoril Praia (48.6%) |
+| CD Nacional vs Sporting Braga | Sporting Braga | 42.5% | 2.42 | 1-1 (12.9%) | Partido abierto: Sporting Braga (42.5%) |
+| Rio Ave vs Famalicão | Famalicão | 46.8% | 2.23 | 0-1 (14.3%) | Ventaja moderada: Famalicão (46.8%) |
+| Sporting CP vs Académico Viseu FC | Sporting CP | 59.6% | 3.00 | 1-1 (10.1%) | Ventaja moderada: Sporting CP (59.6%) |
+| Santa Clara vs Benfica | Benfica | 55.3% | 3.11 | 1-1 (10.1%) | Ventaja moderada: Benfica (55.3%) |
+| Atlas FC vs Club Puebla | Atlas FC | 53.0% | 2.51 | 1-0 (12.9%) | Ventaja moderada: Atlas FC (53.0%) |
+| Club América vs CF Pachuca | Club América | 60.8% | 3.27 | 2-1 (9.8%) | Ventaja clara: Club América (60.8%) |
+| Querétaro FC vs Cruz Azul | Cruz Azul | 37.2% | 2.54 | 1-1 (12.7%) | Partido abierto: Cruz Azul (37.2%) |
+| Club Tijuana vs Santos Laguna | Club Tijuana | 45.7% | 2.55 | 1-1 (12.4%) | Ventaja moderada: Club Tijuana (45.7%) |
+| Los Angeles FC vs LA Galaxy | Los Angeles FC | 54.4% | 2.87 | 1-1 (10.9%) | Ventaja moderada: Los Angeles FC (54.4%) |
+| CE Sabadell vs CD Tenerife | CE Sabadell | 44.8% | 2.14 | 1-0 (14.7%) | Partido abierto: CE Sabadell (44.8%) |
+| Albacete Balompié vs CD Eldense | Albacete Balompié | 38.5% | 2.37 | 1-1 (13.1%) | Partido abierto: Albacete Balompié (38.5%) |
+| Cádiz vs AD Ceuta | Cádiz | 42.8% | 2.58 | 1-1 (12.5%) | Partido abierto: Cádiz (42.8%) |
+| CD Castellón vs Sporting Gijón | CD Castellón | 52.9% | 2.70 | 1-1 (11.5%) | Ventaja moderada: CD Castellón (52.9%) |
+| FC Andorra vs Burgos Club de Fútbol | FC Andorra | 42.1% | 2.29 | 1-1 (13.1%) | Partido abierto: FC Andorra (42.1%) |
+| América Mineiro vs Cuiabá | Cuiabá | 39.8% | 1.93 | 0-1 (15.5%) | Partido abierto: Cuiabá (39.8%) |
+| Juventude vs Náutico | Juventude | 53.0% | 2.20 | 1-0 (15.9%) | Ventaja moderada: Juventude (53.0%) |
+| Montpellier vs Red Star FC | Montpellier | 51.4% | 2.48 | 1-0 (12.9%) | Ventaja moderada: Montpellier (51.4%) |
+| US Boulogne Côte-d'Opale vs Stade de Reims | Stade de Reims | 41.0% | 1.98 | 0-1 (15.3%) | Partido abierto: Stade de Reims (41.0%) |
+| Jagiellonia Białystok vs Wisła Płock | Jagiellonia Białystok | 55.6% | 2.60 | 1-0 (12.5%) | Ventaja moderada: Jagiellonia Białystok (55.6%) |
+| Legia Warszawa vs Lech Poznań | Lech Poznań | 39.0% | 2.94 | 1-1 (11.4%) | Partido abierto: Lech Poznań (39.0%) |
+| Walsall vs Salford City | Walsall | 38.4% | 2.32 | 1-1 (13.2%) | Partido abierto: Walsall (38.4%) |
+| Aldosivi vs Club Atlético Belgrano | Club Atlético Belgrano | 40.2% | 1.93 | 0-1 (15.6%) | Partido abierto: Club Atlético Belgrano (40.2%) |
+| CA Independiente vs Boca Juniors | CA Independiente | 36.7% | 2.52 | 1-1 (12.8%) | Partido abierto: CA Independiente (36.7%) |
+| River Plate vs Racing Club | River Plate | 49.5% | 2.50 | 1-0 (12.4%) | Ventaja moderada: River Plate (49.5%) |
+| Barracas Central vs Estudiantes de Río Cuarto | Barracas Central | 53.9% | 1.69 | 1-0 (22.1%) | Ventaja moderada: Barracas Central (53.9%) |
+| Central Córdoba vs Vélez Sarsfield | Vélez Sarsfield | 41.7% | 1.94 | 0-1 (15.9%) | Partido abierto: Vélez Sarsfield (41.7%) |
+| Club Atlético Unión de Santa Fe vs Estudiantes de La Plata | Club Atlético Unión de Santa Fe | 39.7% | 2.46 | 1-1 (12.9%) | Partido abierto: Club Atlético Unión de Santa Fe (39.7%) |
+| Instituto De Córdoba vs Deportivo Riestra | Instituto De Córdoba | 56.8% | 2.04 | 1-0 (18.5%) | Ventaja moderada: Instituto De Córdoba (56.8%) |
 
-## Arsenal vs Leeds United
+## Crystal Palace vs Newcastle United
 
-**xG:** 1.67 — 0.86 (total 2.53)
+**xG:** 1.77 — 1.42 (total 3.19)
 
 ### 1X2
 
 | Mercado | Probabilidad | Cuota justa |
 |---|---:|---:|
-| Local | 56.6% | 1.77 |
-| Empate | 24.2% | 4.13 |
-| Visitante | 19.2% | 5.21 |
+| Local | 45.9% | 2.18 |
+| Empate | 23.1% | 4.33 |
+| Visitante | 31.0% | 3.23 |
 
 ### Marcadores más probables
 
 | Marcador | Probabilidad | Cuota justa |
 |---|---:|---:|
-| 1-0 | 13.3% | 7.53 |
-| 1-1 | 11.4% | 8.75 |
-| 2-0 | 11.1% | 9.00 |
-| 2-1 | 9.6% | 10.46 |
-| 0-0 | 7.9% | 12.59 |
+| 1-1 | 10.3% | 9.67 |
+| 2-1 | 9.2% | 10.92 |
+| 1-2 | 7.3% | 13.62 |
+| 1-0 | 7.3% | 13.74 |
+| 2-2 | 6.5% | 15.37 |
 
-## Genoa vs Fiorentina
+## Hull City vs Brentford
 
-**xG:** 1.25 — 1.07 (total 2.32)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 40.4% | 2.47 |
-| Empate | 28.1% | 3.56 |
-| Visitante | 31.5% | 3.17 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 1-1 | 13.1% | 7.61 |
-| 1-0 | 12.3% | 8.15 |
-| 0-1 | 10.5% | 9.53 |
-| 0-0 | 9.8% | 10.20 |
-| 2-1 | 8.2% | 12.16 |
-
-## Málaga CF vs Espanyol
-
-**xG:** 1.86 — 1.02 (total 2.88)
+**xG:** 1.08 — 1.29 (total 2.37)
 
 ### 1X2
 
 | Mercado | Probabilidad | Cuota justa |
 |---|---:|---:|
-| Local | 57.1% | 1.75 |
-| Empate | 22.5% | 4.44 |
-| Visitante | 20.4% | 4.90 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 1-1 | 10.7% | 9.39 |
-| 1-0 | 10.5% | 9.55 |
-| 2-1 | 9.9% | 10.10 |
-| 2-0 | 9.7% | 10.27 |
-| 3-1 | 6.1% | 16.29 |
-
-## Rayo Vallecano vs Athletic Club
-
-**xG:** 1.68 — 0.97 (total 2.65)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 54.1% | 1.85 |
-| Empate | 24.2% | 4.14 |
-| Visitante | 21.7% | 4.61 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 1-0 | 11.9% | 8.44 |
-| 1-1 | 11.5% | 8.70 |
-| 2-0 | 10.0% | 10.02 |
-| 2-1 | 9.7% | 10.33 |
-| 0-0 | 7.0% | 14.21 |
-
-## RC Lens vs Olympique Lyonnais
-
-**xG:** 2.14 — 1.18 (total 3.32)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 59.3% | 1.69 |
-| Empate | 20.4% | 4.90 |
-| Visitante | 20.3% | 4.92 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 2-1 | 9.8% | 10.24 |
-| 1-1 | 9.1% | 10.94 |
-| 2-0 | 8.3% | 12.08 |
-| 1-0 | 7.7% | 12.91 |
-| 3-1 | 7.0% | 14.37 |
-
-## Borussia Dortmund vs SV Werder Bremen
-
-**xG:** 2.35 — 0.71 (total 3.06)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 74.1% | 1.35 |
-| Empate | 16.4% | 6.08 |
-| Visitante | 9.5% | 10.57 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 2-0 | 13.0% | 7.71 |
-| 1-0 | 11.0% | 9.05 |
-| 3-0 | 10.2% | 9.85 |
-| 2-1 | 9.2% | 10.88 |
-| 1-1 | 7.8% | 12.78 |
-
-## 1. FC Union Berlin vs SV 07 Elversberg
-
-**xG:** 1.53 — 1.89 (total 3.41)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 31.4% | 3.18 |
-| Empate | 22.2% | 4.50 |
-| Visitante | 46.3% | 2.16 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 1-1 | 9.5% | 10.53 |
-| 1-2 | 9.0% | 11.17 |
-| 2-1 | 7.2% | 13.81 |
-| 2-2 | 6.8% | 14.65 |
-| 0-1 | 6.2% | 16.06 |
-
-## 1. FSV Mainz 05 vs Bayer 04 Leverkusen
-
-**xG:** 1.54 — 1.15 (total 2.68)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 46.2% | 2.16 |
-| Empate | 25.4% | 3.94 |
-| Visitante | 28.4% | 3.52 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 1-1 | 12.0% | 8.30 |
-| 1-0 | 10.5% | 9.53 |
-| 2-1 | 9.2% | 10.82 |
-| 2-0 | 8.1% | 12.41 |
-| 0-1 | 7.8% | 12.74 |
-
-## FC Augsburg vs FC Bayern München
-
-**xG:** 1.27 — 2.73 (total 4.00)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 15.4% | 6.49 |
-| Empate | 16.3% | 6.14 |
-| Visitante | 68.3% | 1.46 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 1-2 | 8.7% | 11.54 |
-| 1-3 | 7.9% | 12.67 |
-| 0-2 | 6.8% | 14.63 |
-| 1-1 | 6.3% | 15.78 |
-| 0-3 | 6.2% | 16.05 |
-
-## SC Paderborn 07 vs VfB Stuttgart
-
-**xG:** 1.63 — 1.71 (total 3.34)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 36.7% | 2.72 |
-| Empate | 22.9% | 4.38 |
-| Visitante | 40.4% | 2.48 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 1-1 | 9.9% | 10.12 |
-| 1-2 | 8.5% | 11.81 |
-| 2-1 | 8.0% | 12.45 |
-| 2-2 | 6.9% | 14.54 |
-| 0-1 | 6.1% | 16.45 |
-
-## TSG Hoffenheim vs Hamburger SV
-
-**xG:** 2.23 — 0.96 (total 3.19)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 66.1% | 1.51 |
-| Empate | 18.9% | 5.28 |
-| Visitante | 15.0% | 6.68 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 2-0 | 10.2% | 9.79 |
-| 2-1 | 9.8% | 10.18 |
-| 1-0 | 9.2% | 10.92 |
-| 1-1 | 8.8% | 11.36 |
-| 3-0 | 7.6% | 13.16 |
-
-## Santos vs Flamengo
-
-**xG:** 1.23 — 1.50 (total 2.73)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 31.2% | 3.20 |
-| Empate | 25.4% | 3.94 |
-| Visitante | 43.4% | 2.30 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 1-1 | 12.0% | 8.32 |
-| 0-1 | 9.7% | 10.26 |
-| 1-2 | 9.0% | 11.08 |
-| 1-0 | 8.0% | 12.48 |
-| 2-1 | 7.4% | 13.49 |
-
-## Athletico vs Atlético Mineiro
-
-**xG:** 1.44 — 1.16 (total 2.60)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 43.7% | 2.29 |
-| Empate | 26.1% | 3.84 |
-| Visitante | 30.3% | 3.30 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 1-1 | 12.4% | 8.07 |
-| 1-0 | 10.7% | 9.34 |
-| 2-1 | 9.0% | 11.17 |
-| 0-1 | 8.6% | 11.65 |
-| 2-0 | 7.7% | 12.93 |
-
-## Fluminense vs Coritiba
-
-**xG:** 1.77 — 1.15 (total 2.92)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 52.1% | 1.92 |
-| Empate | 23.4% | 4.28 |
-| Visitante | 24.6% | 4.07 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 1-1 | 11.0% | 9.12 |
-| 2-1 | 9.7% | 10.28 |
-| 1-0 | 9.6% | 10.45 |
-| 2-0 | 8.5% | 11.78 |
-| 1-2 | 6.3% | 15.92 |
-
-## Palmeiras vs Bahia
-
-**xG:** 1.93 — 0.91 (total 2.84)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 61.1% | 1.64 |
-| Empate | 21.6% | 4.63 |
-| Visitante | 17.3% | 5.80 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 1-0 | 11.2% | 8.89 |
-| 2-0 | 10.8% | 9.22 |
-| 1-1 | 10.3% | 9.73 |
-| 2-1 | 9.9% | 10.10 |
-| 3-0 | 7.0% | 14.35 |
-
-## Moreirense vs Gil Vicente
-
-**xG:** 1.17 — 1.19 (total 2.35)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 35.5% | 2.82 |
-| Empate | 28.0% | 3.57 |
-| Visitante | 36.5% | 2.74 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 1-1 | 13.2% | 7.60 |
-| 0-1 | 11.3% | 8.86 |
-| 1-0 | 11.1% | 9.02 |
-| 0-0 | 9.5% | 10.52 |
-| 1-2 | 7.8% | 12.80 |
-
-## Sporting Braga vs Sporting CP
-
-**xG:** 1.39 — 1.45 (total 2.84)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 36.1% | 2.77 |
-| Empate | 25.1% | 3.99 |
-| Visitante | 38.8% | 2.58 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 1-1 | 11.8% | 8.49 |
-| 1-2 | 8.5% | 11.71 |
-| 0-1 | 8.5% | 11.78 |
-| 2-1 | 8.2% | 12.22 |
-| 1-0 | 8.1% | 12.30 |
-
-## Club Puebla vs Club León
-
-**xG:** 1.18 — 1.23 (total 2.42)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 35.1% | 2.85 |
-| Empate | 27.5% | 3.63 |
-| Visitante | 37.4% | 2.67 |
+| Local | 30.9% | 3.24 |
+| Empate | 27.6% | 3.62 |
+| Visitante | 41.5% | 2.41 |
 
 ### Marcadores más probables
 
 | Marcador | Probabilidad | Cuota justa |
 |---|---:|---:|
 | 1-1 | 13.0% | 7.68 |
-| 0-1 | 11.0% | 9.10 |
-| 1-0 | 10.6% | 9.47 |
-| 0-0 | 8.9% | 11.22 |
-| 1-2 | 8.0% | 12.46 |
+| 0-1 | 12.1% | 8.28 |
+| 1-0 | 10.1% | 9.95 |
+| 0-0 | 9.3% | 10.72 |
+| 1-2 | 8.4% | 11.87 |
 
-## Tigres UANL vs CD Toluca
+## Liverpool FC vs Brighton & Hove Albion
 
-**xG:** 1.21 — 1.25 (total 2.46)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 35.4% | 2.83 |
-| Empate | 27.2% | 3.67 |
-| Visitante | 37.4% | 2.68 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 1-1 | 12.9% | 7.74 |
-| 0-1 | 10.7% | 9.38 |
-| 1-0 | 10.3% | 9.70 |
-| 0-0 | 8.5% | 11.75 |
-| 1-2 | 8.1% | 12.36 |
-
-## West Ham United vs Queens Park Rangers
-
-**xG:** 1.84 — 0.90 (total 2.74)
+**xG:** 1.70 — 1.14 (total 2.84)
 
 ### 1X2
 
 | Mercado | Probabilidad | Cuota justa |
 |---|---:|---:|
-| Local | 59.5% | 1.68 |
-| Empate | 22.5% | 4.44 |
-| Visitante | 18.0% | 5.55 |
+| Local | 50.6% | 1.98 |
+| Empate | 24.0% | 4.17 |
+| Visitante | 25.4% | 3.93 |
 
 ### Marcadores más probables
 
 | Marcador | Probabilidad | Cuota justa |
 |---|---:|---:|
-| 1-0 | 11.9% | 8.41 |
-| 2-0 | 10.9% | 9.15 |
-| 1-1 | 10.7% | 9.34 |
-| 2-1 | 9.8% | 10.17 |
-| 3-0 | 6.7% | 14.94 |
+| 1-1 | 11.3% | 8.84 |
+| 1-0 | 9.9% | 10.06 |
+| 2-1 | 9.6% | 10.38 |
+| 2-0 | 8.5% | 11.81 |
+| 0-1 | 6.6% | 15.06 |
 
-## Charlton Athletic vs Bristol City
+## Manchester United vs Bournemouth
 
-**xG:** 1.18 — 0.89 (total 2.07)
+**xG:** 1.78 — 1.29 (total 3.07)
 
 ### 1X2
 
 | Mercado | Probabilidad | Cuota justa |
 |---|---:|---:|
-| Local | 42.8% | 2.34 |
-| Empate | 29.8% | 3.36 |
-| Visitante | 27.5% | 3.64 |
+| Local | 49.0% | 2.04 |
+| Empate | 23.2% | 4.30 |
+| Visitante | 27.8% | 3.60 |
 
 ### Marcadores más probables
 
 | Marcador | Probabilidad | Cuota justa |
 |---|---:|---:|
-| 1-0 | 15.0% | 6.69 |
-| 1-1 | 13.2% | 7.55 |
-| 0-0 | 12.7% | 7.91 |
-| 0-1 | 11.2% | 8.93 |
-| 2-0 | 8.8% | 11.31 |
+| 1-1 | 10.7% | 9.37 |
+| 2-1 | 9.5% | 10.53 |
+| 1-0 | 8.3% | 12.06 |
+| 2-0 | 7.4% | 13.56 |
+| 1-2 | 6.9% | 14.57 |
 
-## Swansea City vs Norwich City
+## Sunderland vs Leeds United
 
-**xG:** 1.53 — 1.34 (total 2.87)
+**xG:** 1.02 — 1.06 (total 2.08)
 
 ### 1X2
 
 | Mercado | Probabilidad | Cuota justa |
 |---|---:|---:|
-| Local | 41.8% | 2.39 |
-| Empate | 24.8% | 4.03 |
-| Visitante | 33.4% | 2.99 |
+| Local | 33.7% | 2.97 |
+| Empate | 30.1% | 3.32 |
+| Visitante | 36.2% | 2.77 |
 
 ### Marcadores más probables
 
 | Marcador | Probabilidad | Cuota justa |
 |---|---:|---:|
-| 1-1 | 11.6% | 8.61 |
-| 2-1 | 8.9% | 11.26 |
-| 1-0 | 8.6% | 11.57 |
-| 1-2 | 7.8% | 12.82 |
-| 0-1 | 7.6% | 13.17 |
+| 1-1 | 13.5% | 7.40 |
+| 0-1 | 13.3% | 7.52 |
+| 1-0 | 12.7% | 7.87 |
+| 0-0 | 12.5% | 8.00 |
+| 1-2 | 7.2% | 13.93 |
 
-## West Bromwich Albion vs Birmingham City
+## Atalanta vs Frosinone
 
-**xG:** 1.16 — 0.90 (total 2.06)
+**xG:** 1.35 — 1.47 (total 2.83)
 
 ### 1X2
 
 | Mercado | Probabilidad | Cuota justa |
 |---|---:|---:|
-| Local | 41.8% | 2.39 |
-| Empate | 29.9% | 3.34 |
-| Visitante | 28.3% | 3.54 |
+| Local | 34.7% | 2.89 |
+| Empate | 25.1% | 3.98 |
+| Visitante | 40.3% | 2.48 |
 
 ### Marcadores más probables
 
 | Marcador | Probabilidad | Cuota justa |
 |---|---:|---:|
-| 1-0 | 14.8% | 6.77 |
-| 1-1 | 13.3% | 7.52 |
+| 1-1 | 11.8% | 8.47 |
+| 0-1 | 8.7% | 11.44 |
+| 1-2 | 8.7% | 11.48 |
+| 1-0 | 8.0% | 12.49 |
+| 2-1 | 8.0% | 12.54 |
+
+## Genoa vs Venezia
+
+**xG:** 1.18 — 1.44 (total 2.62)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 30.9% | 3.24 |
+| Empate | 26.0% | 3.85 |
+| Visitante | 43.1% | 2.32 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-1 | 12.4% | 8.09 |
+| 0-1 | 10.5% | 9.56 |
+| 1-2 | 8.9% | 11.21 |
+| 1-0 | 8.6% | 11.68 |
+| 0-2 | 7.6% | 13.24 |
+
+## Lecce vs Juventus
+
+**xG:** 0.77 — 1.29 (total 2.06)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 22.3% | 4.49 |
+| Empate | 28.9% | 3.46 |
+| Visitante | 48.8% | 2.05 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 0-1 | 16.4% | 6.10 |
 | 0-0 | 12.7% | 7.88 |
-| 0-1 | 11.4% | 8.75 |
-| 2-0 | 8.6% | 11.64 |
+| 1-1 | 12.7% | 7.90 |
+| 0-2 | 10.6% | 9.44 |
+| 1-0 | 9.8% | 10.20 |
 
-## Ceará vs Criciúma
+## Udinese vs AC Milan
 
-**xG:** 1.11 — 0.92 (total 2.02)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 39.7% | 2.52 |
-| Empate | 30.4% | 3.29 |
-| Visitante | 29.9% | 3.35 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 1-0 | 14.6% | 6.84 |
-| 1-1 | 13.4% | 7.45 |
-| 0-0 | 13.2% | 7.57 |
-| 0-1 | 12.1% | 8.25 |
-| 2-0 | 8.1% | 12.37 |
-
-## Náutico vs Grêmio Novorizontino
-
-**xG:** 1.31 — 1.24 (total 2.55)
+**xG:** 1.33 — 1.06 (total 2.40)
 
 ### 1X2
 
 | Mercado | Probabilidad | Cuota justa |
 |---|---:|---:|
-| Local | 38.3% | 2.61 |
-| Empate | 26.7% | 3.75 |
-| Visitante | 35.0% | 2.86 |
+| Local | 42.8% | 2.33 |
+| Empate | 27.4% | 3.65 |
+| Visitante | 29.8% | 3.36 |
 
 ### Marcadores más probables
 
 | Marcador | Probabilidad | Cuota justa |
 |---|---:|---:|
-| 1-1 | 12.7% | 7.88 |
-| 1-0 | 10.3% | 9.75 |
-| 0-1 | 9.7% | 10.31 |
-| 2-1 | 8.3% | 12.04 |
-| 1-2 | 7.9% | 12.73 |
+| 1-1 | 12.9% | 7.75 |
+| 1-0 | 12.1% | 8.24 |
+| 0-1 | 9.7% | 10.33 |
+| 0-0 | 9.1% | 10.98 |
+| 2-1 | 8.6% | 11.63 |
 
-## Montpellier vs Grenoble Foot 38
+## Athletic Club vs Getafe
 
-**xG:** 1.32 — 0.73 (total 2.05)
+**xG:** 1.02 — 0.80 (total 1.82)
 
 ### 1X2
 
 | Mercado | Probabilidad | Cuota justa |
 |---|---:|---:|
-| Local | 50.8% | 1.97 |
-| Empate | 28.6% | 3.49 |
-| Visitante | 20.6% | 4.86 |
+| Local | 39.6% | 2.52 |
+| Empate | 32.4% | 3.08 |
+| Visitante | 27.9% | 3.58 |
 
 ### Marcadores más probables
 
 | Marcador | Probabilidad | Cuota justa |
 |---|---:|---:|
-| 1-0 | 17.0% | 5.87 |
-| 0-0 | 12.9% | 7.74 |
-| 1-1 | 12.4% | 8.07 |
-| 2-0 | 11.2% | 8.89 |
-| 0-1 | 9.4% | 10.65 |
+| 1-0 | 16.5% | 6.06 |
+| 0-0 | 16.3% | 6.15 |
+| 1-1 | 13.2% | 7.56 |
+| 0-1 | 13.0% | 7.68 |
+| 2-0 | 8.4% | 11.92 |
 
-## Nancy vs Guingamp
+## Celta Vigo vs Real Betis
 
-**xG:** 1.44 — 1.04 (total 2.47)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 46.3% | 2.16 |
-| Empate | 26.5% | 3.77 |
-| Visitante | 27.2% | 3.68 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 1-1 | 12.5% | 7.97 |
-| 1-0 | 12.1% | 8.26 |
-| 2-1 | 9.0% | 11.08 |
-| 0-1 | 8.7% | 11.46 |
-| 2-0 | 8.7% | 11.48 |
-
-## Pau FC vs Stade Lavallois
-
-**xG:** 1.72 — 1.05 (total 2.78)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 53.1% | 1.88 |
-| Empate | 23.8% | 4.20 |
-| Visitante | 23.1% | 4.32 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 1-1 | 11.3% | 8.85 |
-| 1-0 | 10.7% | 9.33 |
-| 2-1 | 9.7% | 10.27 |
-| 2-0 | 9.2% | 10.82 |
-| 0-1 | 6.6% | 15.26 |
-
-## Sochaux vs US Boulogne Côte-d'Opale
-
-**xG:** 1.05 — 0.73 (total 1.78)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 42.4% | 2.36 |
-| Empate | 32.5% | 3.08 |
-| Visitante | 25.0% | 3.99 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 1-0 | 17.7% | 5.65 |
-| 0-0 | 16.9% | 5.92 |
-| 1-1 | 12.9% | 7.74 |
-| 0-1 | 12.3% | 8.11 |
-| 2-0 | 9.3% | 10.77 |
-
-## USL Dunkerque vs Annecy FC
-
-**xG:** 1.49 — 1.41 (total 2.90)
+**xG:** 1.34 — 1.23 (total 2.57)
 
 ### 1X2
 
 | Mercado | Probabilidad | Cuota justa |
 |---|---:|---:|
 | Local | 39.5% | 2.53 |
-| Empate | 24.8% | 4.04 |
-| Visitante | 35.7% | 2.80 |
+| Empate | 26.5% | 3.77 |
+| Visitante | 34.0% | 2.94 |
 
 ### Marcadores más probables
 
 | Marcador | Probabilidad | Cuota justa |
 |---|---:|---:|
-| 1-1 | 11.6% | 8.64 |
-| 2-1 | 8.6% | 11.60 |
-| 1-0 | 8.2% | 12.16 |
-| 1-2 | 8.1% | 12.29 |
-| 0-1 | 7.8% | 12.88 |
+| 1-1 | 12.6% | 7.92 |
+| 1-0 | 10.3% | 9.71 |
+| 0-1 | 9.4% | 10.63 |
+| 2-1 | 8.5% | 11.81 |
+| 1-2 | 7.7% | 12.93 |
 
-## Clermont Foot vs Red Star FC
+## Real Sociedad vs Levante UD
 
-**xG:** 1.24 — 1.08 (total 2.32)
+**xG:** 1.80 — 1.29 (total 3.09)
 
 ### 1X2
 
 | Mercado | Probabilidad | Cuota justa |
 |---|---:|---:|
-| Local | 39.8% | 2.51 |
-| Empate | 28.1% | 3.56 |
-| Visitante | 32.1% | 3.12 |
+| Local | 49.6% | 2.02 |
+| Empate | 23.1% | 4.34 |
+| Visitante | 27.4% | 3.66 |
 
 ### Marcadores más probables
 
 | Marcador | Probabilidad | Cuota justa |
 |---|---:|---:|
-| 1-1 | 13.2% | 7.60 |
-| 1-0 | 12.1% | 8.24 |
-| 0-1 | 10.6% | 9.44 |
-| 0-0 | 9.8% | 10.22 |
-| 2-1 | 8.2% | 12.25 |
+| 1-1 | 10.6% | 9.48 |
+| 2-1 | 9.5% | 10.50 |
+| 1-0 | 8.2% | 12.19 |
+| 2-0 | 7.4% | 13.51 |
+| 1-2 | 6.8% | 14.73 |
 
-## Nantes vs Stade de Reims
+## FC Barcelona vs Real Madrid
 
-**xG:** 0.99 — 1.49 (total 2.48)
+**xG:** 2.31 — 1.42 (total 3.74)
 
 ### 1X2
 
 | Mercado | Probabilidad | Cuota justa |
 |---|---:|---:|
-| Local | 25.0% | 4.00 |
-| Empate | 26.1% | 3.83 |
-| Visitante | 48.9% | 2.04 |
+| Local | 57.5% | 1.74 |
+| Empate | 19.6% | 5.10 |
+| Visitante | 22.9% | 4.36 |
 
 ### Marcadores más probables
 
 | Marcador | Probabilidad | Cuota justa |
 |---|---:|---:|
-| 0-1 | 12.5% | 8.00 |
-| 1-1 | 12.3% | 8.10 |
-| 0-2 | 9.3% | 10.72 |
-| 1-2 | 9.2% | 10.86 |
-| 0-0 | 8.4% | 11.93 |
+| 2-1 | 9.1% | 11.02 |
+| 1-1 | 7.8% | 12.75 |
+| 3-1 | 7.0% | 14.28 |
+| 2-2 | 6.5% | 15.48 |
+| 2-0 | 6.4% | 15.68 |
 
-## Wieczysta Kraków vs Wisła Płock
+## Sevilla vs Osasuna
 
-**xG:** 1.94 — 1.09 (total 3.03)
+**xG:** 1.42 — 1.15 (total 2.58)
 
 ### 1X2
 
 | Mercado | Probabilidad | Cuota justa |
 |---|---:|---:|
-| Local | 57.1% | 1.75 |
-| Empate | 21.9% | 4.56 |
-| Visitante | 21.0% | 4.76 |
+| Local | 43.2% | 2.32 |
+| Empate | 26.2% | 3.81 |
+| Visitante | 30.6% | 3.27 |
 
 ### Marcadores más probables
 
 | Marcador | Probabilidad | Cuota justa |
 |---|---:|---:|
-| 1-1 | 10.2% | 9.79 |
-| 2-1 | 9.9% | 10.09 |
-| 1-0 | 9.4% | 10.69 |
-| 2-0 | 9.1% | 11.02 |
-| 3-1 | 6.4% | 15.61 |
+| 1-1 | 12.5% | 8.01 |
+| 1-0 | 10.8% | 9.24 |
+| 2-1 | 8.9% | 11.26 |
+| 0-1 | 8.8% | 11.39 |
+| 2-0 | 7.7% | 13.00 |
 
-## Raków Częstochowa vs GKS Katowice
+## AS Monaco vs Lille
 
-**xG:** 1.71 — 1.72 (total 3.43)
+**xG:** 1.73 — 1.02 (total 2.74)
 
 ### 1X2
 
 | Mercado | Probabilidad | Cuota justa |
 |---|---:|---:|
-| Local | 38.5% | 2.60 |
-| Empate | 22.5% | 4.44 |
-| Visitante | 39.0% | 2.56 |
+| Local | 54.0% | 1.85 |
+| Empate | 23.8% | 4.21 |
+| Visitante | 22.2% | 4.50 |
 
 ### Marcadores más probables
 
 | Marcador | Probabilidad | Cuota justa |
 |---|---:|---:|
-| 1-1 | 9.5% | 10.51 |
-| 1-2 | 8.2% | 12.20 |
-| 2-1 | 8.1% | 12.29 |
-| 2-2 | 7.0% | 14.27 |
-| 0-1 | 5.6% | 17.96 |
+| 1-1 | 11.3% | 8.85 |
+| 1-0 | 11.1% | 9.00 |
+| 2-1 | 9.8% | 10.25 |
+| 2-0 | 9.6% | 10.43 |
+| 0-1 | 6.5% | 15.28 |
 
-## KS Cracovia vs Zagłębie Lubin
+## Angers vs Lorient
 
-**xG:** 1.26 — 1.06 (total 2.32)
+**xG:** 0.98 — 1.31 (total 2.29)
 
 ### 1X2
 
 | Mercado | Probabilidad | Cuota justa |
 |---|---:|---:|
-| Local | 41.1% | 2.44 |
-| Empate | 28.0% | 3.57 |
-| Visitante | 30.9% | 3.24 |
+| Local | 27.7% | 3.61 |
+| Empate | 27.9% | 3.58 |
+| Visitante | 44.4% | 2.25 |
 
 ### Marcadores más probables
 
 | Marcador | Probabilidad | Cuota justa |
 |---|---:|---:|
-| 1-1 | 13.1% | 7.62 |
-| 1-0 | 12.4% | 8.04 |
+| 0-1 | 13.3% | 7.51 |
+| 1-1 | 13.0% | 7.70 |
+| 0-0 | 10.1% | 9.87 |
+| 1-0 | 9.9% | 10.12 |
+| 0-2 | 8.8% | 11.43 |
+
+## Auxerre vs Le Mans
+
+**xG:** 1.23 — 1.29 (total 2.52)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 35.0% | 2.86 |
+| Empate | 26.9% | 3.72 |
+| Visitante | 38.1% | 2.62 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-1 | 12.8% | 7.83 |
 | 0-1 | 10.4% | 9.62 |
-| 0-0 | 9.9% | 10.15 |
-| 2-1 | 8.3% | 12.07 |
+| 1-0 | 9.9% | 10.13 |
+| 1-2 | 8.3% | 12.12 |
+| 0-0 | 8.0% | 12.43 |
 
-## Notts County vs Oxford United
+## Olympique de Marseille vs Le Havre
 
-**xG:** 1.65 — 0.90 (total 2.54)
+**xG:** 1.57 — 0.79 (total 2.36)
 
 ### 1X2
 
 | Mercado | Probabilidad | Cuota justa |
 |---|---:|---:|
-| Local | 55.1% | 1.81 |
-| Empate | 24.5% | 4.08 |
-| Visitante | 20.4% | 4.91 |
+| Local | 55.9% | 1.79 |
+| Empate | 25.3% | 3.95 |
+| Visitante | 18.7% | 5.34 |
 
 ### Marcadores más probables
 
 | Marcador | Probabilidad | Cuota justa |
 |---|---:|---:|
-| 1-0 | 12.9% | 7.73 |
-| 1-1 | 11.6% | 8.62 |
-| 2-0 | 10.7% | 9.37 |
-| 2-1 | 9.6% | 10.46 |
-| 0-0 | 7.9% | 12.74 |
+| 1-0 | 14.8% | 6.74 |
+| 1-1 | 11.7% | 8.55 |
+| 2-0 | 11.7% | 8.58 |
+| 0-0 | 9.4% | 10.58 |
+| 2-1 | 9.2% | 10.88 |
 
-## Plymouth Argyle vs AFC Wimbledon
+## Stade Rennais vs RC Strasbourg
 
-**xG:** 2.69 — 0.84 (total 3.53)
+**xG:** 1.88 — 1.58 (total 3.47)
 
 ### 1X2
 
 | Mercado | Probabilidad | Cuota justa |
 |---|---:|---:|
-| Local | 76.5% | 1.31 |
-| Empate | 14.3% | 6.97 |
-| Visitante | 9.1% | 10.95 |
+| Local | 45.0% | 2.22 |
+| Empate | 22.2% | 4.51 |
+| Visitante | 32.8% | 3.05 |
 
 ### Marcadores más probables
 
 | Marcador | Probabilidad | Cuota justa |
 |---|---:|---:|
-| 2-0 | 10.6% | 9.40 |
-| 3-0 | 9.5% | 10.48 |
-| 2-1 | 8.9% | 11.24 |
-| 3-1 | 8.0% | 12.53 |
-| 1-0 | 7.9% | 12.66 |
+| 1-1 | 9.3% | 10.73 |
+| 2-1 | 8.8% | 11.41 |
+| 1-2 | 7.4% | 13.55 |
+| 2-2 | 6.9% | 14.41 |
+| 1-0 | 5.9% | 17.01 |
 
-## Oldham Athletic vs Accrington Stanley
+## Toulouse vs Troyes
 
-**xG:** 1.89 — 0.88 (total 2.78)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 61.1% | 1.64 |
-| Empate | 21.9% | 4.57 |
-| Visitante | 17.0% | 5.87 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 1-0 | 11.8% | 8.49 |
-| 2-0 | 11.1% | 8.97 |
-| 1-1 | 10.4% | 9.60 |
-| 2-1 | 9.9% | 10.15 |
-| 3-0 | 7.0% | 14.22 |
-
-## Swindon Town vs Crewe Alexandra
-
-**xG:** 1.32 — 1.32 (total 2.64)
+**xG:** 1.41 — 1.27 (total 2.68)
 
 ### 1X2
 
 | Mercado | Probabilidad | Cuota justa |
 |---|---:|---:|
-| Local | 36.9% | 2.71 |
-| Empate | 26.1% | 3.83 |
-| Visitante | 36.9% | 2.71 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 1-1 | 12.4% | 8.05 |
-| 1-0 | 9.4% | 10.64 |
-| 0-1 | 9.4% | 10.64 |
-| 2-1 | 8.2% | 12.18 |
-| 1-2 | 8.2% | 12.18 |
-
-## Aldosivi vs Sarmiento
-
-**xG:** 1.09 — 1.03 (total 2.12)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 36.5% | 2.74 |
-| Empate | 29.8% | 3.36 |
+| Local | 40.4% | 2.47 |
+| Empate | 25.9% | 3.87 |
 | Visitante | 33.7% | 2.96 |
 
 ### Marcadores más probables
 
 | Marcador | Probabilidad | Cuota justa |
 |---|---:|---:|
-| 1-1 | 13.5% | 7.42 |
-| 1-0 | 13.0% | 7.66 |
-| 0-1 | 12.4% | 8.07 |
-| 0-0 | 12.0% | 8.33 |
-| 2-1 | 7.3% | 13.65 |
+| 1-1 | 12.3% | 8.14 |
+| 1-0 | 9.7% | 10.31 |
+| 0-1 | 8.7% | 11.49 |
+| 2-1 | 8.7% | 11.54 |
+| 1-2 | 7.8% | 12.86 |
 
-## Gimnasia y Esgrima vs Atlético Tucumán
+## Paris Saint-Germain vs Olympique Lyonnais
 
-**xG:** 1.46 — 0.89 (total 2.35)
-
-### 1X2
-
-| Mercado | Probabilidad | Cuota justa |
-|---|---:|---:|
-| Local | 50.4% | 1.98 |
-| Empate | 26.6% | 3.76 |
-| Visitante | 23.0% | 4.34 |
-
-### Marcadores más probables
-
-| Marcador | Probabilidad | Cuota justa |
-|---|---:|---:|
-| 1-0 | 13.9% | 7.20 |
-| 1-1 | 12.4% | 8.07 |
-| 2-0 | 10.1% | 9.87 |
-| 0-0 | 9.5% | 10.52 |
-| 2-1 | 9.0% | 11.05 |
-
-## Instituto De Córdoba vs Boca Juniors
-
-**xG:** 1.07 — 1.17 (total 2.24)
+**xG:** 2.33 — 1.03 (total 3.36)
 
 ### 1X2
 
 | Mercado | Probabilidad | Cuota justa |
 |---|---:|---:|
-| Local | 33.0% | 3.03 |
-| Empate | 28.8% | 3.47 |
-| Visitante | 38.2% | 2.62 |
+| Local | 66.5% | 1.50 |
+| Empate | 18.3% | 5.45 |
+| Visitante | 15.2% | 6.58 |
 
 ### Marcadores más probables
 
 | Marcador | Probabilidad | Cuota justa |
 |---|---:|---:|
+| 2-1 | 9.7% | 10.30 |
+| 2-0 | 9.4% | 10.59 |
+| 1-1 | 8.3% | 12.02 |
+| 1-0 | 8.1% | 12.36 |
+| 3-1 | 7.5% | 13.25 |
+
+## TSG Hoffenheim vs Bayer 04 Leverkusen
+
+**xG:** 1.69 — 1.50 (total 3.19)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 42.5% | 2.35 |
+| Empate | 23.3% | 4.28 |
+| Visitante | 34.1% | 2.93 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-1 | 10.4% | 9.59 |
+| 2-1 | 8.8% | 11.32 |
+| 1-2 | 7.8% | 12.81 |
+| 1-0 | 7.0% | 14.35 |
+| 2-2 | 6.6% | 15.12 |
+
+## SC Freiburg vs FC Bayern München
+
+**xG:** 1.74 — 2.70 (total 4.44)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 24.0% | 4.17 |
+| Empate | 17.9% | 5.60 |
+| Visitante | 58.2% | 1.72 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-2 | 7.5% | 13.38 |
+| 1-3 | 6.7% | 14.87 |
+| 2-2 | 6.5% | 15.35 |
+| 2-3 | 5.9% | 17.07 |
+| 1-1 | 5.5% | 18.05 |
+
+## Coritiba vs Grêmio
+
+**xG:** 1.17 — 1.12 (total 2.29)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 37.0% | 2.70 |
+| Empate | 28.4% | 3.52 |
+| Visitante | 34.6% | 2.89 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-1 | 13.3% | 7.54 |
+| 1-0 | 11.8% | 8.45 |
+| 0-1 | 11.3% | 8.83 |
+| 0-0 | 10.1% | 9.90 |
+| 2-1 | 7.8% | 12.87 |
+
+## Flamengo vs Atlético Mineiro
+
+**xG:** 1.50 — 0.81 (total 2.31)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 53.6% | 1.86 |
+| Empate | 26.1% | 3.82 |
+| Visitante | 20.2% | 4.94 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-0 | 14.9% | 6.73 |
+| 1-1 | 12.0% | 8.30 |
+| 2-0 | 11.2% | 8.95 |
+| 0-0 | 9.9% | 10.11 |
+| 2-1 | 9.1% | 11.04 |
+
+## Estoril Praia vs Moreirense
+
+**xG:** 1.50 — 1.01 (total 2.51)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 48.6% | 2.06 |
+| Empate | 26.0% | 3.85 |
+| Visitante | 25.5% | 3.93 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-1 | 12.3% | 8.12 |
+| 1-0 | 12.2% | 8.20 |
+| 2-1 | 9.2% | 10.83 |
+| 2-0 | 9.1% | 10.93 |
+| 0-1 | 8.2% | 12.17 |
+
+## CD Nacional vs Sporting Braga
+
+**xG:** 1.09 — 1.34 (total 2.42)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 30.3% | 3.30 |
+| Empate | 27.2% | 3.67 |
+| Visitante | 42.5% | 2.36 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-1 | 12.9% | 7.77 |
+| 0-1 | 11.9% | 8.44 |
+| 1-0 | 9.6% | 10.40 |
+| 0-0 | 8.9% | 11.29 |
+| 1-2 | 8.6% | 11.62 |
+
+## Rio Ave vs Famalicão
+
+**xG:** 0.90 — 1.33 (total 2.23)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 25.2% | 3.97 |
+| Empate | 28.0% | 3.57 |
+| Visitante | 46.8% | 2.14 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 0-1 | 14.3% | 6.97 |
+| 1-1 | 12.9% | 7.78 |
+| 0-0 | 10.8% | 9.29 |
+| 1-0 | 9.7% | 10.36 |
+| 0-2 | 9.6% | 10.47 |
+
+## Sporting CP vs Académico Viseu FC
+
+**xG:** 1.98 — 1.02 (total 3.00)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 59.6% | 1.68 |
+| Empate | 21.4% | 4.67 |
+| Visitante | 19.0% | 5.26 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-1 | 10.1% | 9.95 |
+| 2-1 | 10.0% | 10.05 |
+| 1-0 | 9.8% | 10.19 |
+| 2-0 | 9.7% | 10.29 |
+| 3-1 | 6.6% | 15.22 |
+
+## Santa Clara vs Benfica
+
+**xG:** 1.17 — 1.94 (total 3.11)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 22.7% | 4.40 |
+| Empate | 22.0% | 4.54 |
+| Visitante | 55.3% | 1.81 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-1 | 10.1% | 9.87 |
+| 1-2 | 9.8% | 10.18 |
+| 0-1 | 8.7% | 11.54 |
+| 0-2 | 8.4% | 11.91 |
+| 1-3 | 6.3% | 15.76 |
+
+## Atlas FC vs Club Puebla
+
+**xG:** 1.59 — 0.92 (total 2.51)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 53.0% | 1.89 |
+| Empate | 25.1% | 3.98 |
+| Visitante | 21.9% | 4.57 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-0 | 12.9% | 7.76 |
+| 1-1 | 11.9% | 8.41 |
+| 2-0 | 10.2% | 9.77 |
+| 2-1 | 9.5% | 10.58 |
+| 0-0 | 8.1% | 12.34 |
+
+## Club América vs CF Pachuca
+
+**xG:** 2.15 — 1.12 (total 3.27)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 60.8% | 1.64 |
+| Empate | 20.2% | 4.95 |
+| Visitante | 19.0% | 5.27 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 2-1 | 9.8% | 10.16 |
+| 1-1 | 9.2% | 10.91 |
+| 2-0 | 8.8% | 11.38 |
+| 1-0 | 8.2% | 12.22 |
+| 3-1 | 7.0% | 14.20 |
+
+## Querétaro FC vs Cruz Azul
+
+**xG:** 1.26 — 1.28 (total 2.54)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 36.0% | 2.78 |
+| Empate | 26.8% | 3.74 |
+| Visitante | 37.2% | 2.69 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-1 | 12.7% | 7.86 |
+| 0-1 | 10.1% | 9.86 |
+| 1-0 | 9.9% | 10.06 |
+| 1-2 | 8.2% | 12.27 |
+| 2-1 | 8.0% | 12.52 |
+
+## Club Tijuana vs Santos Laguna
+
+**xG:** 1.46 — 1.09 (total 2.55)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 45.7% | 2.19 |
+| Empate | 26.1% | 3.82 |
+| Visitante | 28.1% | 3.56 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-1 | 12.4% | 8.05 |
+| 1-0 | 11.4% | 8.74 |
+| 2-1 | 9.1% | 11.02 |
+| 0-1 | 8.5% | 11.76 |
+| 2-0 | 8.4% | 11.97 |
+
+## Los Angeles FC vs LA Galaxy
+
+**xG:** 1.80 — 1.07 (total 2.87)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 54.4% | 1.84 |
+| Empate | 23.2% | 4.32 |
+| Visitante | 22.5% | 4.45 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-1 | 10.9% | 9.14 |
+| 1-0 | 10.2% | 9.79 |
+| 2-1 | 9.8% | 10.18 |
+| 2-0 | 9.2% | 10.90 |
+| 0-1 | 6.1% | 16.43 |
+
+## CE Sabadell vs CD Tenerife
+
+**xG:** 1.25 — 0.89 (total 2.14)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 44.8% | 2.23 |
+| Empate | 29.0% | 3.45 |
+| Visitante | 26.3% | 3.81 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-0 | 14.7% | 6.78 |
+| 1-1 | 13.1% | 7.65 |
+| 0-0 | 11.8% | 8.50 |
+| 0-1 | 10.4% | 9.58 |
+| 2-0 | 9.2% | 10.83 |
+
+## Albacete Balompié vs CD Eldense
+
+**xG:** 1.23 — 1.13 (total 2.37)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 38.5% | 2.59 |
+| Empate | 27.8% | 3.59 |
+| Visitante | 33.6% | 2.97 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-1 | 13.1% | 7.63 |
+| 1-0 | 11.6% | 8.64 |
+| 0-1 | 10.6% | 9.42 |
+| 0-0 | 9.4% | 10.67 |
+| 2-1 | 8.1% | 12.36 |
+
+## Cádiz vs AD Ceuta
+
+**xG:** 1.42 — 1.16 (total 2.58)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 42.8% | 2.34 |
+| Empate | 26.3% | 3.81 |
+| Visitante | 30.9% | 3.23 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-1 | 12.5% | 8.01 |
+| 1-0 | 10.7% | 9.31 |
+| 2-1 | 8.8% | 11.31 |
+| 0-1 | 8.8% | 11.34 |
+| 2-0 | 7.6% | 13.15 |
+
+## CD Castellón vs Sporting Gijón
+
+**xG:** 1.68 — 1.02 (total 2.70)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 52.9% | 1.89 |
+| Empate | 24.2% | 4.13 |
+| Visitante | 22.9% | 4.37 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-1 | 11.5% | 8.69 |
+| 1-0 | 11.3% | 8.84 |
+| 2-1 | 9.7% | 10.33 |
+| 2-0 | 9.5% | 10.51 |
+| 0-1 | 6.8% | 14.61 |
+
+## FC Andorra vs Burgos Club de Fútbol
+
+**xG:** 1.27 — 1.02 (total 2.29)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 42.1% | 2.38 |
+| Empate | 28.1% | 3.55 |
+| Visitante | 29.8% | 3.36 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-1 | 13.1% | 7.62 |
+| 1-0 | 12.8% | 7.80 |
+| 0-1 | 10.3% | 9.69 |
+| 0-0 | 10.1% | 9.91 |
+| 2-1 | 8.3% | 12.00 |
+
+## América Mineiro vs Cuiabá
+
+**xG:** 0.86 — 1.07 (total 1.93)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 28.9% | 3.46 |
+| Empate | 31.3% | 3.20 |
+| Visitante | 39.8% | 2.51 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 0-1 | 15.5% | 6.45 |
+| 0-0 | 14.5% | 6.88 |
+| 1-1 | 13.4% | 7.48 |
+| 1-0 | 12.5% | 7.99 |
+| 0-2 | 8.3% | 12.08 |
+
+## Juventude vs Náutico
+
+**xG:** 1.44 — 0.77 (total 2.20)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 53.0% | 1.89 |
+| Empate | 27.0% | 3.70 |
+| Visitante | 20.0% | 4.99 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-0 | 15.9% | 6.31 |
+| 1-1 | 12.2% | 8.22 |
+| 2-0 | 11.4% | 8.79 |
+| 0-0 | 11.0% | 9.06 |
+| 2-1 | 8.7% | 11.44 |
+
+## Montpellier vs Red Star FC
+
+**xG:** 1.54 — 0.94 (total 2.48)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 51.4% | 1.95 |
+| Empate | 25.6% | 3.90 |
+| Visitante | 23.0% | 4.35 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-0 | 12.9% | 7.74 |
+| 1-1 | 12.1% | 8.25 |
+| 2-0 | 10.0% | 10.05 |
+| 2-1 | 9.3% | 10.71 |
+| 0-0 | 8.4% | 11.94 |
+
+## US Boulogne Côte-d'Opale vs Stade de Reims
+
+**xG:** 0.87 — 1.11 (total 1.98)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 28.3% | 3.53 |
+| Empate | 30.7% | 3.26 |
+| Visitante | 41.0% | 2.44 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 0-1 | 15.3% | 6.52 |
+| 0-0 | 13.8% | 7.24 |
 | 1-1 | 13.3% | 7.50 |
-| 0-1 | 12.5% | 7.99 |
-| 1-0 | 11.4% | 8.77 |
-| 0-0 | 10.7% | 9.35 |
-| 1-2 | 7.8% | 12.83 |
+| 1-0 | 12.0% | 8.33 |
+| 0-2 | 8.5% | 11.74 |
 
-## Club Atlético Unión de Santa Fe vs Defensa y Justicia
+## Jagiellonia Białystok vs Wisła Płock
 
-**xG:** 1.84 — 1.09 (total 2.93)
+**xG:** 1.69 — 0.91 (total 2.60)
 
 ### 1X2
 
 | Mercado | Probabilidad | Cuota justa |
 |---|---:|---:|
-| Local | 54.8% | 1.82 |
-| Empate | 22.8% | 4.39 |
-| Visitante | 22.4% | 4.47 |
+| Local | 55.6% | 1.80 |
+| Empate | 24.1% | 4.15 |
+| Visitante | 20.3% | 4.93 |
 
 ### Marcadores más probables
 
 | Marcador | Probabilidad | Cuota justa |
 |---|---:|---:|
-| 1-1 | 10.7% | 9.34 |
-| 2-1 | 9.8% | 10.15 |
-| 1-0 | 9.8% | 10.22 |
-| 2-0 | 9.0% | 11.11 |
-| 3-1 | 6.0% | 16.55 |
+| 1-0 | 12.5% | 7.98 |
+| 1-1 | 11.4% | 8.74 |
+| 2-0 | 10.6% | 9.47 |
+| 2-1 | 9.6% | 10.37 |
+| 0-0 | 7.4% | 13.45 |
+
+## Legia Warszawa vs Lech Poznań
+
+**xG:** 1.44 — 1.50 (total 2.94)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 36.4% | 2.74 |
+| Empate | 24.6% | 4.07 |
+| Visitante | 39.0% | 2.57 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-1 | 11.4% | 8.75 |
+| 1-2 | 8.6% | 11.69 |
+| 2-1 | 8.2% | 12.15 |
+| 0-1 | 7.9% | 12.61 |
+| 1-0 | 7.6% | 13.12 |
+
+## Walsall vs Salford City
+
+**xG:** 1.21 — 1.11 (total 2.32)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 38.4% | 2.60 |
+| Empate | 28.2% | 3.55 |
+| Visitante | 33.4% | 2.99 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-1 | 13.2% | 7.58 |
+| 1-0 | 11.9% | 8.41 |
+| 0-1 | 10.9% | 9.17 |
+| 0-0 | 9.8% | 10.18 |
+| 2-1 | 8.0% | 12.52 |
+
+## Aldosivi vs Club Atlético Belgrano
+
+**xG:** 0.86 — 1.08 (total 1.93)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 28.6% | 3.50 |
+| Empate | 31.2% | 3.20 |
+| Visitante | 40.2% | 2.49 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 0-1 | 15.6% | 6.42 |
+| 0-0 | 14.5% | 6.91 |
+| 1-1 | 13.3% | 7.49 |
+| 1-0 | 12.4% | 8.06 |
+| 0-2 | 8.4% | 11.94 |
+
+## CA Independiente vs Boca Juniors
+
+**xG:** 1.27 — 1.26 (total 2.52)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 36.7% | 2.72 |
+| Empate | 26.9% | 3.72 |
+| Visitante | 36.4% | 2.75 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-1 | 12.8% | 7.83 |
+| 1-0 | 10.1% | 9.86 |
+| 0-1 | 10.1% | 9.91 |
+| 2-1 | 8.1% | 12.38 |
+| 1-2 | 8.0% | 12.45 |
+
+## River Plate vs Racing Club
+
+**xG:** 1.52 — 0.99 (total 2.50)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 49.5% | 2.02 |
+| Empate | 25.9% | 3.87 |
+| Visitante | 24.6% | 4.07 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-0 | 12.4% | 8.04 |
+| 1-1 | 12.2% | 8.16 |
+| 2-0 | 9.4% | 10.62 |
+| 2-1 | 9.3% | 10.78 |
+| 0-0 | 8.2% | 12.19 |
+
+## Barracas Central vs Estudiantes de Río Cuarto
+
+**xG:** 1.20 — 0.49 (total 1.69)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 53.9% | 1.86 |
+| Empate | 31.0% | 3.23 |
+| Visitante | 15.2% | 6.60 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-0 | 22.1% | 4.53 |
+| 0-0 | 18.4% | 5.44 |
+| 2-0 | 13.3% | 7.53 |
+| 1-1 | 10.9% | 9.20 |
+| 0-1 | 9.0% | 11.07 |
+
+## Central Córdoba vs Vélez Sarsfield
+
+**xG:** 0.83 — 1.11 (total 1.94)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 27.3% | 3.66 |
+| Empate | 31.0% | 3.22 |
+| Visitante | 41.7% | 2.40 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 0-1 | 15.9% | 6.30 |
+| 0-0 | 14.4% | 6.96 |
+| 1-1 | 13.3% | 7.54 |
+| 1-0 | 12.0% | 8.34 |
+| 0-2 | 8.8% | 11.39 |
+
+## Club Atlético Unión de Santa Fe vs Estudiantes de La Plata
+
+**xG:** 1.30 — 1.16 (total 2.46)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 39.7% | 2.52 |
+| Empate | 27.2% | 3.68 |
+| Visitante | 33.1% | 3.02 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-1 | 12.9% | 7.76 |
+| 1-0 | 11.1% | 9.02 |
+| 0-1 | 9.9% | 10.08 |
+| 0-0 | 8.5% | 11.71 |
+| 2-1 | 8.4% | 11.95 |
+
+## Instituto De Córdoba vs Deportivo Riestra
+
+**xG:** 1.43 — 0.62 (total 2.04)
+
+### 1X2
+
+| Mercado | Probabilidad | Cuota justa |
+|---|---:|---:|
+| Local | 56.8% | 1.76 |
+| Empate | 27.1% | 3.69 |
+| Visitante | 16.1% | 6.22 |
+
+### Marcadores más probables
+
+| Marcador | Probabilidad | Cuota justa |
+|---|---:|---:|
+| 1-0 | 18.5% | 5.41 |
+| 2-0 | 13.2% | 7.58 |
+| 0-0 | 12.9% | 7.73 |
+| 1-1 | 11.4% | 8.77 |
+| 2-1 | 8.1% | 12.29 |
